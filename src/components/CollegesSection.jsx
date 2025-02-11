@@ -13,6 +13,7 @@ export default function CollegesSection() {
             in the healthcare sector."
       className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5"
       muted
+      fluid
     >
       {collegesName.map((college, index) => (
         <CollegeCard college={college} index={index} key={index} />

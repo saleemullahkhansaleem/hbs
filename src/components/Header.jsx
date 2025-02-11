@@ -7,24 +7,27 @@ import { Button } from "./ui/button";
 const Header = ({ setDarkMode, darkMode }) => {
   return (
     <>
-      <div className="w-full px-4 bg-primary h-2 md:h-4 relative">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-foreground py-2 px-1 text-3xl z-40 relative bg-white border border-primary">
-            <Link to="/" className="flex items-end gap-2">
-              <img
-                src="/images/logos/logo.png"
-                alt="logo"
-                height={100}
-                className="h-10 md:h-20 dark:hidden"
-              />{" "}
-              <img
-                src="/images/logos/logo.png"
-                alt="logo"
-                height={100}
-                className="h-10 md:h-20 hidden dark:block"
-              />
-            </Link>
+      <div className="w-full px-4 bg-primary h-2 md:h-8 relative">
+        <div className="container mx-auto flex justify-between">
+          <div className="relative h-full w-40">
+            <div className="text-foreground py-2 px-1 text-3xl z-40 absolute top-0 bg-white border border-primary">
+              <Link to="/" className="flex items-end gap-2 w-full">
+                <img
+                  src="/images/logos/logo.png"
+                  alt="logo"
+                  height={100}
+                  className="h-10 md:h-20 dark:hidden"
+                />{" "}
+                <img
+                  src="/images/logos/logo.png"
+                  alt="logo"
+                  height={100}
+                  className="h-10 md:h-20 hidden dark:block"
+                />
+              </Link>
+            </div>
           </div>
+          <Navbar />
         </div>
       </div>
       <header className="text-foreground sticky top-0 z-30 bg-background/70 backdrop-blur">

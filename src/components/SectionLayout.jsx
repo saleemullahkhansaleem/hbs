@@ -9,12 +9,19 @@ export default function SectionLayout({
   description,
   className = "",
   muted = false,
+  fluid = false,
   href = null,
   btnText = "learn More",
+  bg,
 }) {
   return (
     <section className={`py-12 relative ${muted && "bg-muted"}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+      {bg && bg}
+      <div
+        className={`container ${
+          !fluid && "max-w-7xl"
+        } mx-auto px-4 sm:px-6 lg:px-8 relative`}
+      >
         <div className="lg:text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

@@ -21,7 +21,6 @@ export default function OurHospitalsSection() {
       title="World-Class Healthcare Facilities"
       description="Discover our state-of-the-art hospitals providing comprehensive medical and dental care."
       className="py-8"
-      muted
     >
       <Tabs
         defaultValue="general"
@@ -29,10 +28,10 @@ export default function OurHospitalsSection() {
         onValueChange={(value) => setActiveTab(value)}
       >
         <TabsList className="grid w-full grid-cols-2 mb-8 h-full">
-          <TabsTrigger value="general" className="text-lg py-2">
+          <TabsTrigger value="general" className="">
             <Hospital className="mr-2" /> HBS General Hospital
           </TabsTrigger>
-          <TabsTrigger value="dental" className="text-lg py-2">
+          <TabsTrigger value="dental" className="">
             <Tooth className="mr-2" /> HBS Dental Hospital
           </TabsTrigger>
         </TabsList>
@@ -54,14 +53,14 @@ function HBSGeneralHospital({ activeTab }) {
       animate={{ opacity: activeTab === "general" ? 1 : 0, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <div>
           <img
-            src="/images/hbsgh.png"
+            src="/images/hbsgh.webp"
             alt="HBS General Hospital"
             width={600}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg object-cover aspect-video w-full"
           />
           <p className="mt-4 text-center text-muted-foreground">
             Alipur, Nai Abadi, Islamabad. 2621043.44
@@ -78,14 +77,17 @@ function HBSGeneralHospital({ activeTab }) {
           </p>
           <div className="grid grid-cols-2 gap-4">
             {departments.map((dept, index) => (
-              <Card key={index} className="bg-primary/5">
-                <CardHeader className="p-4">
-                  <CardTitle className="text-lg">{dept.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-4 pt-0">
-                  <CardDescription>{dept.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <div key={index} className="relative">
+                <div className="absolute -inset-2 z-0 blur-2xl bg-primary/5"></div>
+                <div className="bg-primary/5 relative h-full">
+                  <CardHeader className="p-4">
+                    <CardTitle className="text-lg">{dept.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-4 pt-0">
+                    <CardDescription>{dept.description}</CardDescription>
+                  </CardContent>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -104,11 +106,11 @@ function HBSDentalHospital({ activeTab }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <img
-            src="/images/hbsdh.png"
+            src="/images/hbsdh.webp"
             alt="HBS Dental Hospital"
             width={600}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg object-cover aspect-video w-full"
           />
           <h3 className="text-2xl font-bold mt-6 mb-4">What We Offer</h3>
           <p className="text-muted-foreground mb-4">
@@ -119,8 +121,8 @@ function HBSDentalHospital({ activeTab }) {
             {dentalServices.map((service, index) => (
               <Badge
                 key={index}
-                variant="secondary"
-                className="text-sm py-1 px-3"
+                variant=""
+                className=""
               >
                 {service}
               </Badge>
@@ -134,14 +136,14 @@ function HBSDentalHospital({ activeTab }) {
           </p>
           <div className="space-y-4">
             {dentalDepartments.map((dept, index) => (
-              <Card key={index} className="bg-primary/5">
+              <div key={index} className="bg-primary/5">
                 <CardHeader className="p-4">
                   <CardTitle className="text-lg flex items-center">
                     <Stethoscope className="mr-2" size={20} />
                     {dept}
                   </CardTitle>
                 </CardHeader>
-              </Card>
+              </div>
             ))}
           </div>
         </div>

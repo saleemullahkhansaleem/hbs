@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function ContactSection() {
   return (
-    <section className="bg-background py-12">
+    <section className="bg-muted py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div className="">
@@ -45,12 +45,6 @@ export default function ContactSection() {
               viewport={{ once: true }}
               className="mt-6 flex justify-start gap-4"
             >
-              <Button asChild variant="outline" size="">
-                <Link to="/donate">Donate</Link>
-              </Button>
-              <Button asChild variant="secondary" size="">
-                <Link to="/friends">Get Involved</Link>
-              </Button>
               <Button asChild variant="" size="">
                 <Link to="/contact">Send Message</Link>
               </Button>

@@ -19,6 +19,7 @@ import CollegesSection from "./CollegesSection";
 import ChairmanMessageSection from "./ChairmanMessageSection";
 import BoardOfDirectorsSection from "./BoardOfDirectorsSection";
 import AcademicsSection from "./AcademicsSection";
+import ConferencesAndWorkshopsSection from "./ConferencesAndWorkshopsSection";
 import OurHospitalsSection from "./OurHospitalsSection";
 import ProgramsSection from "./ProgramsSection";
 import FocusAreasSection from "./FocusAreasSection";
@@ -50,6 +51,7 @@ export {
   ChairmanMessageSection,
   BoardOfDirectorsSection,
   AcademicsSection,
+  ConferencesAndWorkshopsSection,
   OurHospitalsSection,
   ProgramsSection,
   FocusAreasSection,

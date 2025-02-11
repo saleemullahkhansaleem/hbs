@@ -4,6 +4,7 @@ import {
   BoardOfDirectorsSection,
   ChairmanMessageSection,
   CollegesSection,
+  ConferencesAndWorkshopsSection,
   ContactSection,
   CoursesSection,
   FocusAreasSection,
@@ -46,6 +47,7 @@ export default function Home() {
       <ChairmanMessageSection />
       <BoardOfDirectorsSection />
       <AcademicsSection />
+      <ConferencesAndWorkshopsSection />
       <OurHospitalsSection />
       {/* <ProgramsSection />
       <FocusAreasSection />
