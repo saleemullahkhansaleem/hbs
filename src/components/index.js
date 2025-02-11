@@ -17,6 +17,9 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import CollegesSection from "./CollegesSection";
 import ChairmanMessageSection from "./ChairmanMessageSection";
+import BoardOfDirectorsSection from "./BoardOfDirectorsSection";
+import AcademicsSection from "./AcademicsSection";
+import OurHospitalsSection from "./OurHospitalsSection";
 import ProgramsSection from "./ProgramsSection";
 import FocusAreasSection from "./FocusAreasSection";
 import CoursesSection from "./CoursesSection";
@@ -45,6 +48,9 @@ export {
   AboutSection,
   CollegesSection,
   ChairmanMessageSection,
+  BoardOfDirectorsSection,
+  AcademicsSection,
+  OurHospitalsSection,
   ProgramsSection,
   FocusAreasSection,
   CoursesSection,

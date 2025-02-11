@@ -1,5 +1,7 @@
 import {
   AboutSection,
+  AcademicsSection,
+  BoardOfDirectorsSection,
   ChairmanMessageSection,
   CollegesSection,
   ContactSection,
@@ -7,6 +9,7 @@ import {
   FocusAreasSection,
   HeroSection,
   NewsSection,
+  OurHospitalsSection,
   PerformanceSection,
   ProgramsSection,
   TeamSection,
@@ -41,12 +44,15 @@ export default function Home() {
       <AboutSection />
       <CollegesSection />
       <ChairmanMessageSection />
-      <ProgramsSection />
+      <BoardOfDirectorsSection />
+      <AcademicsSection />
+      <OurHospitalsSection />
+      {/* <ProgramsSection />
       <FocusAreasSection />
       <CoursesSection />
       <PerformanceSection />
       <TeamSection />
-      <NewsSection />
+      <NewsSection /> */}
       <ContactSection />
     </div>
   );
