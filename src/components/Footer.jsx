@@ -147,8 +147,8 @@ export default function Footer({ darkMode, setDarkMode }) {
       </div>
       <div className="px-4 py-2 container mx-auto border-t border-gray-500 md:flex md:items-center md:justify-between">
         <p className="mt-2 text-sm md:mt-0 text-gray-400">
-          &copy; {new Date().getFullYear()} HBS - Drive for Economic and
-          Environmental Development. All rights reserved.
+          &copy; {new Date().getFullYear()} HBS - Institutes of Healthcare &
+          Allied Sciences. All rights reserved.
         </p>
         <div className="mt-2 text-sm text-gray-400 md:mt-0 flex items-center">
           <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
