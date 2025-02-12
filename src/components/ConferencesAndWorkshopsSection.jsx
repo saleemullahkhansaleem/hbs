@@ -226,14 +226,6 @@
 
 import { motion } from "framer-motion";
 import { SectionLayout } from ".";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Calendar, Users, Award, BookOpen } from "lucide-react";
 import {
   Carousel,
@@ -249,7 +241,9 @@ export default function ConferencesAndWorkshopsSection() {
       name="Conferences and Workshops"
       title="Advancing Medical Knowledge"
       description="Explore our recent academic events fostering research and collaboration in healthcare."
-      className="py-8"
+      btnText="View More"
+      href="/"
+
       bg={
         <img
           src="images/world.webp"
@@ -306,11 +300,6 @@ export function EventCard({ title, date, icon, images, description }) {
       viewport={{ once: true }}
       className="relative shadow-lg bg-primary/5 backdrop-blur"
     >
-      {/* <img
-        src={image || "https://placehold.co/600x400"}
-        alt={title}
-        className="w-full object-cover aspect-[3/2]"
-      /> */}
       <Carousel className="w-full mx-auto">
         <CarouselContent>
           {images.map((image, i) => (

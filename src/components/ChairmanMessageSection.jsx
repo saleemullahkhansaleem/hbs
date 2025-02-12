@@ -8,7 +8,6 @@ export default function ChairmanMessageSection() {
       name="Chairman's Message"
       title="Shaping the Future of Healthcare"
       description="At HBS, we empower future healthcare professionals with excellence in education, innovation, and service."
-      className="py-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <motion.div

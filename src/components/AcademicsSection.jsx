@@ -20,7 +20,7 @@ export default function AcademicsSection() {
       name="Academics"
       title="Courses We Offer"
       description="Explore our diverse range of medical and allied health programs designed to shape the future of healthcare professionals."
-      className="py-8"
+      href="/"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -3,6 +3,7 @@ import ScrollToTop from "./ScrollToTop";
 import BackToTopButton from "./BackToTopButton";
 import MrCard from "./MrCard";
 import Header from "./Header";
+import AffiliationsDropdown from "./AffiliationsDropdown";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import LogoCarousel from "./LogoCarousel";
@@ -36,6 +37,7 @@ export {
   BackToTopButton,
   MrCard,
   Header,
+  AffiliationsDropdown,
   Footer,
   Navbar,
   LogoCarousel,

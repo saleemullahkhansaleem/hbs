@@ -6,35 +6,28 @@ import {
   CollegesSection,
   ConferencesAndWorkshopsSection,
   ContactSection,
-  CoursesSection,
-  FocusAreasSection,
   HeroSection,
-  NewsSection,
   OurHospitalsSection,
-  PerformanceSection,
-  ProgramsSection,
-  TeamSection,
 } from "@/components";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export const contactData = [
   {
     icon: FaPhoneAlt,
     title: "Call Us",
-    content: "+92 51 8739888",
-    link: "tel:+92518739888",
+    content: "+92 (51) 2243322",
+    link: "tel:+92512243322",
   },
   {
     icon: FaEnvelope,
     title: "Mail Us",
-    content: "info@hbs.edu.pk",
-    link: "mailto:info@hbs.edu.pk",
+    content: "Info@hbs.edu.pk",
+    link: "mailto:Info@hbs.edu.pk",
   },
   {
     icon: FaMapMarkerAlt,
     title: "Visit Us",
-    content: "Jinnah Avenue, Blue Area, Islamabad.",
+    content: "Lehtarar Road, Near Taramri Chowk, Islamabad, Pakistan.",
   },
 ];
 
@@ -49,12 +42,6 @@ export default function Home() {
       <AcademicsSection />
       <ConferencesAndWorkshopsSection />
       <OurHospitalsSection />
-      {/* <ProgramsSection />
-      <FocusAreasSection />
-      <CoursesSection />
-      <PerformanceSection />
-      <TeamSection />
-      <NewsSection /> */}
       <ContactSection />
     </div>
   );

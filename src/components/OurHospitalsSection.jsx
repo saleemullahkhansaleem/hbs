@@ -20,7 +20,8 @@ export default function OurHospitalsSection() {
       name="Our Hospitals"
       title="World-Class Healthcare Facilities"
       description="Discover our state-of-the-art hospitals providing comprehensive medical and dental care."
-      className="py-8"
+      href="/"
+      btnText="Visit Hospitals website"
     >
       <Tabs
         defaultValue="general"
@@ -119,11 +120,7 @@ function HBSDentalHospital({ activeTab }) {
           </p>
           <div className="flex flex-wrap gap-2">
             {dentalServices.map((service, index) => (
-              <Badge
-                key={index}
-                variant=""
-                className=""
-              >
+              <Badge key={index} variant="" className="">
                 {service}
               </Badge>
             ))}

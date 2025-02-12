@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 import { SectionLayout } from ".";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { LinkedinIcon, TwitterIcon } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -11,58 +9,11 @@ export default function BoardOfDirectorsSection() {
       name="Leadership"
       title="Board of Directors"
       description="Meet the visionaries guiding HBS towards excellence in medical education and healthcare."
-      className="py-8"
+      className=""
       muted
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {directors.map((director, index) => (
-          //   <motion.div
-          //     key={index}
-          //     initial={{ opacity: 0, y: 20 }}
-          //     whileInView={{ opacity: 1, y: 0 }}
-          //     transition={{ duration: 0.5, delay: index * 0.1 }}
-          //     viewport={{ once: true }}
-          //   >
-          //     <Card className="overflow-hidden group">
-          //       <div className="relative h-64 overflow-hidden">
-          //         <img
-          //           src={director.image || "/placeholder.svg"}
-          //           alt={director.name}
-          //           className="transition-transform duration-300 group-hover:scale-110 object-cover"
-          //         />
-          //         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-          //       </div>
-          //       <CardHeader className="relative z-10 -mt-20">
-          //         <CardTitle className="text-2xl font-bold text-white">
-          //           {director.name}
-          //         </CardTitle>
-          //       </CardHeader>
-          //       <CardContent>
-          //         <p className="text-primary font-semibold mb-4">
-          //           {director.position}
-          //         </p>
-          //         <p className="text-muted-foreground">{director.bio}</p>
-          //         <div className="mt-4 flex space-x-4">
-          //           <a
-          //             href={director.linkedin}
-          //             target="_blank"
-          //             rel="noopener noreferrer"
-          //             className="text-muted-foreground hover:text-primary transition-colors"
-          //           >
-          //             <LinkedinIcon size={20} />
-          //           </a>
-          //           <a
-          //             href={director.twitter}
-          //             target="_blank"
-          //             rel="noopener noreferrer"
-          //             className="text-muted-foreground hover:text-primary transition-colors"
-          //           >
-          //             <TwitterIcon size={20} />
-          //           </a>
-          //         </div>
-          //       </CardContent>
-          //     </Card>
-          //   </motion.div>
           <ExpertCard key={director.name} {...director} />
         ))}
       </div>

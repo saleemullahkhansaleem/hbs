@@ -1,22 +1,29 @@
 import { Link } from "react-router-dom";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { MrCard, ThemeToggle } from ".";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 export const footerNavigation = {
   organisation: [
-    { name: "About Us", href: "/about-us" },
-    { name: "Policies", href: "/policies" },
-    { name: "Our Team", href: "/team" },
-    { name: "News & Events", href: "/news" },
+    { name: "About", href: "/about" },
+    { name: "Programs", href: "/programs" },
     { name: "Contact Us", href: "/contact" },
+    { name: "Career", href: "/career" },
+    { name: "QEC", href: "/qec" },
+    { name: "Journal", href: "/journal" },
   ],
+
   quickLinks: [
-    { name: "Free Short Courses", href: "/courses" },
-    { name: "Smart School System (DSSS)", href: "/dsss" },
-    { name: "HBS Performance", href: "/performance" },
-    { name: "Become our Partner", href: "/friends" },
-    { name: "Donate", href: "/donate" },
+    { name: "HBS Medical & Dental College", href: "/medical-dental-college" },
+    { name: "HBS College of Pharmacy", href: "/college-of-pharmacy" },
+    { name: "HBS College of Nursing", href: "/college-of-nursing" },
+    { name: "HBS General Hospital", href: "/general-hospital" },
+    { name: "HBS Dental Hospital", href: "/dental-hospital" },
+    { name: "Apply Online", href: "/apply-online" },
+    { name: "Admissions", href: "/admissions" },
   ],
+
   social: [
     {
       name: "Facebook",
@@ -70,11 +77,11 @@ export default function Footer({ darkMode, setDarkMode }) {
               </h3>
             </div>
             <p className="mt-4 text-base text-gray-400">
-              HBS is a non-profit organization working across Pakistan to
-              alleviate poverty and improve living standards through sustainable
-              development initiatives.
+              HBS is dedicated to advancing medical education, research, and
+              healthcare services with a commitment to excellence and innovation
+              in the field of biomedical sciences.
             </p>
-            {/* <form className="mt-4 sm:flex sm:max-w-md">
+            <form className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -92,7 +99,7 @@ export default function Footer({ darkMode, setDarkMode }) {
                   Subscribe
                 </Button>
               </div>
-            </form> */}
+            </form>
             <div className="flex space-x-6 mt-8">
               {footerNavigation.social.map((item) => (
                 <a
@@ -112,7 +119,7 @@ export default function Footer({ darkMode, setDarkMode }) {
               <h3 className="text-sm font-semibold tracking-wider uppercase">
                 Organisation
               </h3>
-              <ul role="list" className="mt-4 space-y-4">
+              <ul role="list" className="mt-4 space-y-2">
                 {footerNavigation.organisation.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -129,7 +136,7 @@ export default function Footer({ darkMode, setDarkMode }) {
               <h3 className="text-sm font-semibold tracking-wider uppercase">
                 Quick Links
               </h3>
-              <ul role="list" className="mt-4 space-y-4">
+              <ul role="list" className="mt-4 space-y-2">
                 {footerNavigation.quickLinks.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -147,8 +154,8 @@ export default function Footer({ darkMode, setDarkMode }) {
       </div>
       <div className="px-4 py-2 container mx-auto border-t border-gray-500 md:flex md:items-center md:justify-between">
         <p className="mt-2 text-sm md:mt-0 text-gray-400">
-          &copy; {new Date().getFullYear()} HBS - Institutes of Healthcare &
-          Allied Sciences. All rights reserved.
+          &copy; {new Date().getFullYear()} HBS Institutes of Healthcare &
+          Allied Sciences. All Rights Reserved.
         </p>
         <div className="mt-2 text-sm text-gray-400 md:mt-0 flex items-center">
           <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />

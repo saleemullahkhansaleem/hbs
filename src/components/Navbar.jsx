@@ -103,7 +103,7 @@ export default function Navbar() {
   return (
     <>
       <NavbarMobile navigation={navigation} />
-      <div className="hidden xl:flex">
+      <div className="hidden xl:flex pl-4">
         {navigation.map((item, index) => (
           <div className="group relative" key={index}>
             <NavLink

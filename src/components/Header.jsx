@@ -1,14 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
-import { ThemeToggle } from ".";
+import { AffiliationsDropdown, ThemeToggle } from ".";
 import { footerNavigation } from "./Footer";
 import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = ({ setDarkMode, darkMode }) => {
   return (
     <>
-      <div className="w-full px-4 bg-primary h-2 md:h-8 relative">
-        <div className="container mx-auto flex justify-between">
+      <div className="w-full px-4 bg-primary h-7 relative">
+        <div className="container mx-auto flex h-full justify-between">
           <div className="relative h-full w-40">
             <div className="text-foreground py-2 px-1 text-3xl z-40 absolute top-0 bg-white border border-primary">
               <Link to="/" className="flex items-end gap-2 w-full">
@@ -27,11 +36,35 @@ const Header = ({ setDarkMode, darkMode }) => {
               </Link>
             </div>
           </div>
-          <Navbar />
+          <div className="flex items-center h-full gap-3">
+            <NavLink
+              className={({ isActive }) =>
+                `cursor-pointer hover:text-background text-nowrap ${
+                  isActive ? "text-background bg-primary/10" : "text-foreground"
+                }`
+              }
+              to="/careers"
+            >
+              <div className="text-sm">Careers</div>
+            </NavLink>
+            <span>|</span>
+            <NavLink
+              className={({ isActive }) =>
+                `cursor-pointer hover:text-background text-nowrap ${
+                  isActive ? "text-background bg-primary/10" : "text-foreground"
+                }`
+              }
+              to="/qec"
+            >
+              <div className="text-sm">QEC</div>
+            </NavLink>
+            <span>|</span>
+            <AffiliationsDropdown />
+          </div>
         </div>
       </div>
-      <header className="text-foreground sticky top-0 z-30 bg-background/70 backdrop-blur">
-        <div className="container mx-auto flex justify-between px-4">
+      <header className="text-foreground sticky top-0 z-30 bg-background/70 backdrop-blur px-4">
+        <div className="container mx-auto flex justify-between">
           <div className="w-16 md:w-1"></div>
           <Navbar />
           <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
