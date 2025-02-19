@@ -1,10 +1,22 @@
 import { Outlet } from "react-router-dom";
 import { Footer, Header, ScrollToTop } from "./components";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { Toaster } from "./components/ui/toaster";
 
 export default function Layout() {
   const [darkMode, setDarkMode] = useState(true);
+
+  useLayoutEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      setDarkMode(theme === "dark");
+    } else {
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setDarkMode(systemPrefersDark);
+    }
+  }, []);
 
   useEffect(() => {
     if (darkMode) {

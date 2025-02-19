@@ -2,16 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import { AffiliationsDropdown, ThemeToggle } from ".";
 import { footerNavigation } from "./Footer";
-import { Button } from "./ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = ({ setDarkMode, darkMode }) => {
   return (
@@ -25,13 +15,13 @@ const Header = ({ setDarkMode, darkMode }) => {
                   src="/images/logos/logo.png"
                   alt="logo"
                   height={100}
-                  className="h-10 md:h-20 dark:hidden"
+                  className="h-12 md:h-20 dark:hidden"
                 />{" "}
                 <img
                   src="/images/logos/logo.png"
                   alt="logo"
                   height={100}
-                  className="h-10 md:h-20 hidden dark:block"
+                  className="h-12 md:h-20 hidden dark:block"
                 />
               </Link>
             </div>

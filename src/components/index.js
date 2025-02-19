@@ -12,6 +12,7 @@ import TruncateParagraph from "./TruncateParagraph";
 import ContactForm from "./ContactForm";
 import SecondaryHeader from "./SecondaryHeader";
 import SectionLayout from "./SectionLayout";
+import SideNav from "./SideNav";
 
 // Home
 import HeroSection from "./HeroSection";
@@ -22,13 +23,6 @@ import BoardOfDirectorsSection from "./BoardOfDirectorsSection";
 import AcademicsSection from "./AcademicsSection";
 import ConferencesAndWorkshopsSection from "./ConferencesAndWorkshopsSection";
 import OurHospitalsSection from "./OurHospitalsSection";
-import ProgramsSection from "./ProgramsSection";
-import FocusAreasSection from "./FocusAreasSection";
-import CoursesSection from "./CoursesSection";
-import PerformanceSection from "./PerformanceSection";
-import NewsSection from "./NewsSection";
-import TeamSection from "./TeamSection";
-import HighlightedEvent from "./HighlightedEvent";
 import ContactSection from "./ContactSection";
 
 export {
@@ -46,6 +40,7 @@ export {
   ContactForm,
   SecondaryHeader,
   SectionLayout,
+  SideNav,
   //   Home
   HeroSection,
   AboutSection,
@@ -55,12 +50,5 @@ export {
   AcademicsSection,
   ConferencesAndWorkshopsSection,
   OurHospitalsSection,
-  ProgramsSection,
-  FocusAreasSection,
-  CoursesSection,
-  PerformanceSection,
-  NewsSection,
-  TeamSection,
   ContactSection,
-  HighlightedEvent,
 };

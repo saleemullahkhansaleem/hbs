@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { contactData } from "@/pages/Home";
-import { ContactForm } from ".";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { contactData } from "@/pages/Home";
 
-export default function ContactSection() {
+export default function ContactSection({ data = contactData }) {
   return (
     <section className="bg-muted py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,7 +65,7 @@ export default function ContactSection() {
               },
             }}
           >
-            {contactData.map((item, index) => (
+            {data.map((item, index) => (
               <motion.div
                 key={index}
                 className="relative group flex items-center gap-4"

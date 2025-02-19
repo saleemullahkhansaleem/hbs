@@ -10,7 +10,7 @@ export const navigation = [
   },
   {
     name: "About HBS",
-    href: "/about-hbs",
+    href: "/about",
     subItems: [
       { name: "The Name", href: "/about-hbs/the-name" },
       {
@@ -27,27 +27,27 @@ export const navigation = [
   },
   {
     name: "Our Colleges",
-    href: "/our-colleges",
+    href: "/colleges",
     subItems: [
       {
         name: "HBS Medical & Dental College",
-        href: "/our-colleges/hbs-medical-dental-college",
+        href: "/colleges/mdc",
       },
       {
         name: "HBS College of Paramedics",
-        href: "/our-colleges/hbs-college-of-paramedics",
+        href: "/colleges/paramedics",
       },
       {
         name: "HBS College of Nursing",
-        href: "/our-colleges/hbs-college-of-nursing",
+        href: "/colleges/nursing",
       },
       {
         name: "HBS College of Pharmacy",
-        href: "/our-colleges/hbs-college-of-pharmacy",
+        href: "/colleges/pharmacy",
       },
       {
         name: "HBS College of Rehabilitation & Allied Health Sciences",
-        href: "/our-colleges/hbs-college-of-rehabilitation-allied-health-sciences",
+        href: "/colleges/rehabilitation-ahs",
       },
     ],
   },

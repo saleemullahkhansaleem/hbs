@@ -6,17 +6,12 @@ import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
 import {
   About,
+  CollegesLayout,
   ContactUs,
-  Courses,
-  Donate,
-  DSSS,
-  Friends,
   Home,
+  HomeMDC,
   News,
   NotFound,
-  Performance,
-  Policies,
-  Programmes,
   Team,
 } from "./pages";
 import { Provider } from "react-redux";
@@ -37,32 +32,22 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "programmes",
-        element: <Programmes />,
-      },
-      {
-        path: "dsss",
-        element: <DSSS />,
-      },
-      {
-        path: "performance",
-        element: <Performance />,
-      },
-      {
-        path: "friends",
-        element: <Friends />,
+        path: "colleges/mdc",
+        element: <CollegesLayout />,
+        children: [
+          {
+            path: "",
+            element: <HomeMDC />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
+        ],
       },
       {
         path: "news",
         element: <News />,
-      },
-      {
-        path: "donate",
-        element: <Donate />,
-      },
-      {
-        path: "policies",
-        element: <Policies />,
       },
       {
         path: "team",
@@ -71,10 +56,6 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactUs />,
-      },
-      {
-        path: "courses",
-        element: <Courses />,
       },
       {
         path: "*",
