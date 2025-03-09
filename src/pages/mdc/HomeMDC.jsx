@@ -15,7 +15,7 @@ export default function HomeMDC() {
   return (
     <div className="min-h-screen bg-background">
       <AboutSection />
-      <div className="bg-secondary/50">
+      <div className="bg-muted">
         <FacilitiesSection />
       </div>
       <LocationSection />
