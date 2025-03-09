@@ -45,7 +45,7 @@ export default function ContactSection({ data = contactData }) {
               viewport={{ once: true }}
               className="mt-6 flex justify-start gap-4"
             >
-              <Button asChild variant="" size="">
+              <Button asChild variant="secondary" size="">
                 <Link to="/contact">Send Message</Link>
               </Button>
             </motion.div>

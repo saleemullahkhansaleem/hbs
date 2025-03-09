@@ -45,10 +45,7 @@ export const footerNavigation = {
 
 export default function Footer({ darkMode, setDarkMode }) {
   return (
-    <footer
-      className="bg-orange-950 text-white"
-      aria-labelledby="footer-heading"
-    >
+    <footer className="bg-gray-900 text-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -95,7 +92,7 @@ export default function Footer({ darkMode, setDarkMode }) {
                 placeholder="Enter your email"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <Button type="submit" className="h-10">
+                <Button type="submit" variant="secondary" className="h-10">
                   Subscribe
                 </Button>
               </div>

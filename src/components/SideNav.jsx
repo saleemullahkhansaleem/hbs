@@ -205,6 +205,7 @@ import {
   FaClipboardCheck,
   FaNewspaper,
   FaUserCheck,
+  FaCircle,
 } from "react-icons/fa";
 
 const items = [
@@ -358,10 +359,10 @@ export default function SideNav() {
     <Sidebar variant="" collapsible="icon" className="sticky">
       <SidebarContent className="">
         <SidebarGroup>
-          <SidebarGroupLabel className="mb-4">
-            Medical & Dental College
-          </SidebarGroupLabel>
-          <SidebarGroupContent>
+          {/* <SidebarGroupLabel className="mb-4">
+            <FaCircle/> <span>Medical & Dental College</span>
+          </SidebarGroupLabel> */}
+          <SidebarGroupContent className="mt-12">
             <SidebarMenu>
               {items.map((item) =>
                 item.subItems && item.subItems.length > 0 ? (

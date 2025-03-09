@@ -14,9 +14,8 @@ import { ContactSection, SectionLayout } from "@/components";
 export default function HomeMDC() {
   return (
     <div className="min-h-screen bg-background">
-      {/* <HeroSection /> */}
       <AboutSection />
-      <div className="bg-secondary/20">
+      <div className="bg-secondary/50">
         <FacilitiesSection />
       </div>
       <LocationSection />
@@ -24,49 +23,6 @@ export default function HomeMDC() {
         <ContactSection />
       </div>
     </div>
-  );
-}
-
-function HeroSection() {
-  return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <img
-        src="/placeholder.svg?height=1080&width=1920"
-        alt="HBS Medical & Dental College"
-        className="absolute z-0 object-cover"
-      />
-      <div className="absolute inset-0 bg-black/50 z-10" />
-      <div className="relative z-20 text-center text-white">
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          HBS Medical & Dental College
-        </motion.h1>
-        <motion.p
-          className="text-xl md:text-2xl mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          Shaping the Future of Healthcare
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <Button size="lg" className="mr-4">
-            Apply Now
-          </Button>
-          <Button size="lg" variant="outline">
-            Learn More
-          </Button>
-        </motion.div>
-      </div>
-    </section>
   );
 }
 
@@ -130,7 +86,7 @@ function FacilitiesSection() {
       name="Our Facilities"
       title="Comprehensive Learning Environment"
       description="We provide state-of-the-art facilities to ensure the best educational experience for our students."
-      className="py-16"
+      className="py-8"
       fluid
     >
       <Tabs defaultValue="library" className="w-full">

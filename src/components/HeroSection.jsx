@@ -205,7 +205,12 @@ const HeroSection = () => {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Button className="hover:scale-105" size="lg" asChild>
+                <Button
+                  className="hover:scale-105"
+                  variant="secondary"
+                  size="lg"
+                  asChild
+                >
                   <Link to={selectedSlide.href}>Learn More</Link>
                 </Button>
               </motion.div>

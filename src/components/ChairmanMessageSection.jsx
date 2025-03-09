@@ -42,7 +42,7 @@ export default function ChairmanMessageSection() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <blockquote className="text-lg text-muted-foreground italic border-l-4 border-primary pl-4">
+          <blockquote className="text-lg text-muted-foreground italic border-l-4 border-secondary pl-4">
             "It is a matter of great pride and privilege for me that you have
             applied for admission to the MBBS/BDS programme of HBS Medical and
             Dental College. It reminds me of the excitement and exhilaration I

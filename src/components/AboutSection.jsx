@@ -43,8 +43,10 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="mt-6"
           >
-            <Button variant="" size="" asChild>
-              <Link to="/about-hbs">Learn More</Link>
+            <Button variant="secondary" size="" asChild>
+              <Link to="/about-hbs">
+                Learn More
+              </Link>
             </Button>
           </motion.div>
         </div>

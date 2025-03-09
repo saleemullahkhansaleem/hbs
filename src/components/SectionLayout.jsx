@@ -56,7 +56,7 @@ export default function SectionLayout({
           <div className={className}>{children}</div>
           {href && (
             <div className="mt-12 text-center">
-              <Button asChild variant="" size="lg">
+              <Button asChild variant="secondary" size="lg">
                 <Link to={href}>{btnText}</Link>
               </Button>
             </div>
