@@ -174,7 +174,7 @@ export default function Navbar() {
         ))}
         {featureBtn && (
           <div className="flex items-center pl-2">
-            <Button variant="secondary" asChild>
+            <Button variant="" asChild>
               <Link to={featureBtn.href}>{featureBtn.name}</Link>
             </Button>
           </div>

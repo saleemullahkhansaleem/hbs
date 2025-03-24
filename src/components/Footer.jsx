@@ -92,7 +92,7 @@ export default function Footer({ darkMode, setDarkMode }) {
                 placeholder="Enter your email"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <Button type="submit" variant="secondary" className="h-10">
+                <Button type="submit" variant="" className="h-10">
                   Subscribe
                 </Button>
               </div>

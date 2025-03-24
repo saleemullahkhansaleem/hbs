@@ -43,7 +43,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="mt-6"
           >
-            <Button variant="secondary" size="" asChild>
+            <Button variant="" size="" asChild>
               <Link to="/about-hbs">
                 Learn More
               </Link>

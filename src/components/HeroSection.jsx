@@ -207,7 +207,7 @@ const HeroSection = () => {
               >
                 <Button
                   className="hover:scale-105"
-                  variant="secondary"
+                  variant=""
                   size="lg"
                   asChild
                 >
