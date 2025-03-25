@@ -7,6 +7,7 @@ import ContactUs from "./ContactUs";
 
 import CollegesLayout from "./mdc/CollegesLayout";
 import HomeMDC from "./mdc/HomeMDC";
+import FacultyMBBS from "./mdc/FacultyMBBS";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   //   MDC
   CollegesLayout,
   HomeMDC,
+  FacultyMBBS,
 };

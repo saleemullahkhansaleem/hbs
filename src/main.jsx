@@ -8,6 +8,7 @@ import {
   About,
   CollegesLayout,
   ContactUs,
+  FacultyMBBS,
   Home,
   HomeMDC,
   News,
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <HomeMDC />,
+          },
+          {
+            path: "faculty-mbbs",
+            element: <FacultyMBBS />,
           },
           {
             path: "*",
