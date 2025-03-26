@@ -30,7 +30,11 @@ export default function FacultyMBBS() {
       name: "DEPARTMENT OF ANATOMY",
       icon: Bone,
       faculty: [
-        { name: "Dr. Shazia Muazam", designation: "Professor – HOD" },
+        {
+          name: "Dr. Shazia Muazam",
+          designation: "Professor – HOD",
+          image: "/images/about/chairman-profile.png",
+        },
         { name: "Dr. Samina Anjum Jaffri", designation: "Professor" },
         { name: "Dr. Naseer-ud-din", designation: "Assistant Professor" },
         { name: "Dr. M. Azam Qureshi", designation: "Professor" },
@@ -528,8 +532,16 @@ export default function FacultyMBBS() {
 function FacultyCard({ faculty }) {
   return (
     <div className="rounded-lg shadow-sm borde p-4 hover:shadow-md transition-shadow bg-primary/5">
-      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-3 mx-auto">
-        <GraduationCap className="h-8 w-8 text-primary" />
+      <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mb-3 mx-auto overflow-hidden p-1">
+        {faculty.image ? (
+          <img
+            src={faculty.image}
+            alt={faculty.name}
+            className="w-full aspect-square object-cover rounded-full border border-primary p-1"
+          />
+        ) : (
+          <GraduationCap className="h-8 w-8 text-primary" />
+        )}
       </div>
       <h3 className="font-semibold text-center mb-1">{faculty.name}</h3>
       <p className="text-sm text-muted-foreground text-center">

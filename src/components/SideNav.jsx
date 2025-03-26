@@ -73,7 +73,7 @@ const items = [
         href: "faculty-mbbs",
         icon: FaUserGraduate,
       },
-      { name: "Faculty BDS Section", href: "#", icon: FaUserGraduate },
+      { name: "Faculty BDS Section", href: "faculty-bds", icon: FaUserGraduate },
       { name: "Academics", href: "#", icon: FaBook },
       { name: "Positions & Distinctions", href: "#", icon: FaAward },
       { name: "Hostel", href: "#", icon: FaHome },

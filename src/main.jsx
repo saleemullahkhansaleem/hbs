@@ -8,6 +8,7 @@ import {
   About,
   CollegesLayout,
   ContactUs,
+  FacultyBDS,
   FacultyMBBS,
   Home,
   HomeMDC,
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
           {
             path: "faculty-mbbs",
             element: <FacultyMBBS />,
+          },
+          {
+            path: "faculty-bds",
+            element: <FacultyBDS />,
           },
           {
             path: "*",
