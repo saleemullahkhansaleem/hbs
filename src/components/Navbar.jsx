@@ -11,19 +11,19 @@ export const navigation = [
   {
     name: "About HBS",
     href: "/about",
-    subItems: [
-      { name: "The Name", href: "/about-hbs/the-name" },
-      {
-        name: "Organizational Structure",
-        href: "/about-hbs/organizational-structure",
-      },
-      { name: "Board of Directors", href: "/about-hbs/board-of-directors" },
-      { name: "Chairman’s Message", href: "/about-hbs/chairman-message" },
-      {
-        name: "Executive Director’s Message",
-        href: "/about-hbs/executive-director-message",
-      },
-    ],
+    // subItems: [
+    //   { name: "The Name", href: "/about-hbs/the-name" },
+    //   {
+    //     name: "Organizational Structure",
+    //     href: "/about-hbs/organizational-structure",
+    //   },
+    //   { name: "Board of Directors", href: "/about-hbs/board-of-directors" },
+    //   { name: "Chairman’s Message", href: "/about-hbs/chairman-message" },
+    //   {
+    //     name: "Executive Director’s Message",
+    //     href: "/about-hbs/executive-director-message",
+    //   },
+    // ],
   },
   {
     name: "Our Colleges",
@@ -67,7 +67,7 @@ export const navigation = [
   },
   {
     name: "Our Programs",
-    href: "/our-programs",
+    href: "/programs",
   },
   {
     name: "Research and Development",
@@ -90,7 +90,7 @@ export const navigation = [
   },
   {
     name: "Contact Us",
-    href: "/contact-us",
+    href: "/contact",
   },
 ];
 

@@ -163,11 +163,11 @@ const items = [
       { name: "Policy for Electives 2024", href: "#", icon: FaClipboardList },
     ],
   },
-  {
-    name: "Contact Us",
-    href: "#",
-    icon: FaUserCheck,
-  },
+  // {
+  //   name: "Contact Us",
+  //   href: "#",
+  //   icon: FaUserCheck,
+  // },
   {
     name: "Vacant Seats",
     href: "#",

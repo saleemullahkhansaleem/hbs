@@ -6,6 +6,7 @@ import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
 import {
   About,
+  Careers,
   CollegesLayout,
   ContactUs,
   FacultyBDS,
@@ -14,6 +15,8 @@ import {
   HomeMDC,
   News,
   NotFound,
+  Programs,
+  QEC,
   Team,
 } from "./pages";
 import { Provider } from "react-redux";
@@ -56,12 +59,24 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "programs",
+        element: <Programs />,
+      },
+      {
         path: "news",
         element: <News />,
       },
       {
         path: "team",
         element: <Team />,
+      },
+      {
+        path: "careers",
+        element: <Careers />,
+      },
+      {
+        path: "qec",
+        element: <QEC />,
       },
       {
         path: "contact",

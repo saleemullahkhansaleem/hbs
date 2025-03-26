@@ -3,6 +3,9 @@ import NotFound from "./NotFound";
 import About from "./About";
 import News from "./News";
 import Team from "./Team";
+import Programs from "./Programs";
+import Careers from "./Careers";
+import QEC from "./QEC";
 import ContactUs from "./ContactUs";
 
 import CollegesLayout from "./mdc/CollegesLayout";
@@ -15,6 +18,9 @@ export {
   About,
   News,
   Team,
+  Programs,
+  Careers,
+  QEC,
   ContactUs,
   NotFound,
   //   MDC
