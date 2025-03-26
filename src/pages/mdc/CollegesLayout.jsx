@@ -27,8 +27,8 @@ export default function CollegesLayout() {
       <div className="relative">
         <SidebarProvider className="">
           <SideNav pageName="Our Colleges" />
-          <main className="flex-grow">
-            <SidebarTrigger className="m-4" />
+          <main className="flex-grow relative">
+            <SidebarTrigger className="m-4 absolute top-0 left-0 z-30" />
             <Outlet />
           </main>
         </SidebarProvider>

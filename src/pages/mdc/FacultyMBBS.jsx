@@ -382,9 +382,9 @@ export default function FacultyMBBS() {
 
   return (
     <div className="min-h-screen ">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Faculty MBBS Section</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Meet our distinguished faculty members who are dedicated to
@@ -393,7 +393,7 @@ export default function FacultyMBBS() {
         </div>
 
         {/* Search and Filter */}
-        <div className="relative max-w-md mx-auto mb-12">
+        <div className="relative max-w-md mx-auto mb-6">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search className="h-5 w-5" />
           </div>
@@ -417,7 +417,7 @@ export default function FacultyMBBS() {
 
           <TabsContent value="all" className="space-y-8">
             {filteredDepartments.map((department, index) => (
-              <Card key={index} className="overflow-hidden">
+              <div key={index} className="overflow-hidden">
                 <div className="bg-primary/5 p-4 flex items-center gap-3">
                   {department.icon && (
                     <department.icon className="h-6 w-6 text-primary" />
@@ -459,7 +459,7 @@ export default function FacultyMBBS() {
                     </div>
                   )}
                 </div>
-              </Card>
+              </div>
             ))}
           </TabsContent>
 
@@ -474,7 +474,7 @@ export default function FacultyMBBS() {
                   dept.name.includes("RADIOLOGY")
               )
               .map((department, index) => (
-                <Card key={index} className="overflow-hidden">
+                <div key={index} className="overflow-hidden">
                   <div className="bg-primary/5 p-4 flex items-center gap-3">
                     {department.icon && (
                       <department.icon className="h-6 w-6 text-primary" />
@@ -516,7 +516,7 @@ export default function FacultyMBBS() {
                       </div>
                     )}
                   </div>
-                </Card>
+                </div>
               ))}
           </TabsContent>
         </Tabs>
