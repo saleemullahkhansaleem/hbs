@@ -12,6 +12,19 @@ import CollegesLayout from "./mdc/CollegesLayout";
 import HomeMDC from "./mdc/HomeMDC";
 import FacultyMBBS from "./mdc/FacultyMBBS";
 import FacultyBDS from "./mdc/FacultyBDS";
+import Academics from "./mdc/Academics";
+import Admissions from "./mdc/Admissions";
+import PositionsDistinctions from "./mdc/PositionsDistinctions";
+import MediaGallery from "./mdc/MediaGallery";
+import DME from "./mdc/DME";
+import LifeAtHBS from "./mdc/LifeAtHBS";
+import StudentFacilities from "./mdc/StudentFacilities";
+import GroundRules from "./mdc/GroundRules";
+import StudentSocieties from "./mdc/StudentSocieties";
+import SportsEventsGallery from "./mdc/SportsEventsGallery";
+import HBSMagazine from "./mdc/HBSMagazine";
+import StudentAffairs from "./mdc/StudentAffairs";
+import Timetables from "./mdc/Timetables";
 
 export {
   Home,
@@ -28,4 +41,17 @@ export {
   HomeMDC,
   FacultyMBBS,
   FacultyBDS,
+  Academics,
+  Admissions,
+  PositionsDistinctions,
+  MediaGallery,
+  DME,
+  LifeAtHBS,
+  StudentFacilities,
+  GroundRules,
+  StudentSocieties,
+  SportsEventsGallery,
+  HBSMagazine,
+  StudentAffairs,
+  Timetables,
 };

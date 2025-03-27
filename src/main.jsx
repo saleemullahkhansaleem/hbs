@@ -6,18 +6,31 @@ import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
 import {
   About,
+  Academics,
+  Admissions,
   Careers,
   CollegesLayout,
   ContactUs,
+  DME,
   FacultyBDS,
   FacultyMBBS,
+  GroundRules,
+  HBSMagazine,
   Home,
   HomeMDC,
+  LifeAtHBS,
+  MediaGallery,
   News,
   NotFound,
+  PositionsDistinctions,
   Programs,
   QEC,
+  SportsEventsGallery,
+  StudentAffairs,
+  StudentFacilities,
+  StudentSocieties,
   Team,
+  Timetables,
 } from "./pages";
 import { Provider } from "react-redux";
 import store from "./redux/store";
@@ -51,6 +64,58 @@ const router = createBrowserRouter([
           {
             path: "faculty-bds",
             element: <FacultyBDS />,
+          },
+          {
+            path: "academics",
+            element: <Academics />,
+          },
+          {
+            path: "admissions",
+            element: <Admissions />,
+          },
+          {
+            path: "positions-distinctions",
+            element: <PositionsDistinctions />,
+          },
+          {
+            path: "media-gallery",
+            element: <MediaGallery />,
+          },
+          {
+            path: "dme",
+            element: <DME />,
+          },
+          {
+            path: "life-at-hbs",
+            element: <LifeAtHBS />,
+          },
+          {
+            path: "student-facilities",
+            element: <StudentFacilities />,
+          },
+          {
+            path: "ground-rules",
+            element: <GroundRules />,
+          },
+          {
+            path: "student-societies",
+            element: <StudentSocieties />,
+          },
+          {
+            path: "sports-events-gallery",
+            element: <SportsEventsGallery />,
+          },
+          {
+            path: "hbs-magazine",
+            element: <HBSMagazine />,
+          },
+          {
+            path: "student-affairs",
+            element: <StudentAffairs />,
+          },
+          {
+            path: "timetables",
+            element: <Timetables />,
           },
           {
             path: "*",

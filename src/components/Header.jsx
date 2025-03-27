@@ -6,10 +6,10 @@ import { footerNavigation } from "./Footer";
 const Header = ({ setDarkMode, darkMode }) => {
   return (
     <>
-      <div className="w-full px-4 bg-primary h-7 relative">
+      <div className="w-full px-4 bg-primary text-primary-foreground h-7 relative">
         <div className="container mx-auto flex h-full justify-between">
           <div className="relative h-full w-40">
-            <div className="text-foreground py-2 px-1 text-3xl z-40 absolute top-0 bg-white border border-primary">
+            <div className="py-2 px-1 text-3xl z-40 absolute top-0 bg-white border border-primary">
               <Link to="/" className="flex items-end gap-2 w-full">
                 <img
                   src="/images/logos/logo.png"
@@ -30,7 +30,9 @@ const Header = ({ setDarkMode, darkMode }) => {
             <NavLink
               className={({ isActive }) =>
                 `cursor-pointer hover:text-background text-nowrap ${
-                  isActive ? "text-background bg-primary/10" : "text-foreground"
+                  isActive
+                    ? "text-background bg-primary/10"
+                    : "text-primary-foreground"
                 }`
               }
               to="/careers"
@@ -41,7 +43,9 @@ const Header = ({ setDarkMode, darkMode }) => {
             <NavLink
               className={({ isActive }) =>
                 `cursor-pointer hover:text-background text-nowrap ${
-                  isActive ? "text-background bg-primary/10" : "text-foreground"
+                  isActive
+                    ? "text-background bg-primary/10"
+                    : "text-primary-foreground"
                 }`
               }
               to="/qec"

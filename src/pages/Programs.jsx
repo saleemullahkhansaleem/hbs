@@ -106,7 +106,9 @@ export default function Programs() {
                   <div className="md:w-1/3 bg-primary/10 p-8 flex flex-col justify-center items-center text-center">
                     <Tooth className="h-16 w-16 text-primary mb-4" />
                     <h3 className="text-2xl font-bold mb-2">BDS</h3>
-                    <p className="text-muted-foreground">Bachelor of Dental Surgery</p>
+                    <p className="text-muted-foreground">
+                      Bachelor of Dental Surgery
+                    </p>
                   </div>
                   <div className="md:w-2/3 p-8">
                     <p className="text-muted-foreground mb-6">
@@ -339,14 +341,14 @@ export default function Programs() {
       </section>
 
       {/* Admission CTA */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-primary text-primary-foreground">
         <div className="container max-w-7xl mx-auto px-4 md:px-0">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0">
               <h2 className="text-3xl font-bold mb-2">
                 Ready to Begin Your Healthcare Journey?
               </h2>
-              <p className="text-white/90">
+              <p className="text-primary-foreground/70">
                 Applications are now open for the upcoming academic session
               </p>
             </div>
@@ -354,14 +356,14 @@ export default function Programs() {
               <Button
                 size="lg"
                 variant="default"
-                className="bg-white text-primary hover:bg-white/90"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/70"
               >
                 Apply Now
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                variant=""
+                className="border-primary-foreground border text-primary-foreground hover:bg-primary-foreground/10"
               >
                 Download Prospectus
               </Button>
