@@ -103,9 +103,9 @@ export default function StudentFacilities() {
                     </div>
                     <div className="relative h-[300px] rounded-xl overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=300&width=400"
+                        src="https://placehold.co/400x300"
                         alt="HBS Library"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>
@@ -167,30 +167,30 @@ export default function StudentFacilities() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="relative h-[150px] rounded-lg overflow-hidden">
                         <img
-                          src="/placeholder.svg?height=150&width=200"
+                          src="https://placehold.co/200x150"
                           alt="Hostel Room"
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                       <div className="relative h-[150px] rounded-lg overflow-hidden">
                         <img
-                          src="/placeholder.svg?height=150&width=200"
+                          src="https://placehold.co/200x150"
                           alt="Hostel Building"
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                       <div className="relative h-[150px] rounded-lg overflow-hidden">
                         <img
-                          src="/placeholder.svg?height=150&width=200"
+                          src="https://placehold.co/200x150"
                           alt="Hostel Common Area"
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                       <div className="relative h-[150px] rounded-lg overflow-hidden">
                         <img
-                          src="/placeholder.svg?height=150&width=200"
+                          src="https://placehold.co/200x150"
                           alt="Hostel Dining"
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                     </div>
@@ -290,9 +290,9 @@ export default function StudentFacilities() {
                     </div>
                     <div className="relative h-[300px] rounded-xl overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=300&width=400"
+                        src="https://placehold.co/400x300"
                         alt="HBS Transportation"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>
@@ -412,30 +412,30 @@ export default function StudentFacilities() {
                   <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200"
+                        src="https://placehold.co/200x150"
                         alt="Biochemistry Lab"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200"
+                        src="https://placehold.co/200x150"
                         alt="Histology Lab"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200"
+                        src="https://placehold.co/200x150"
                         alt="Pathology Lab"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200"
+                        src="https://placehold.co/200x150"
                         alt="Skill Lab"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>

@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import {
   FileText,
@@ -178,30 +176,30 @@ export default function StudentSocietiesPage() {
                   <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Debate+Competition"
+                        src="https://placehold.co/200x150"
                         alt="Debate Competition"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Magazine+Launch"
+                        src="https://placehold.co/200x150"
                         alt="Magazine Launch"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Drama+Performance"
+                        src="https://placehold.co/200x150"
                         alt="Drama Performance"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Writing+Workshop"
+                        src="https://placehold.co/200x150"
                         alt="Writing Workshop"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>
@@ -296,30 +294,30 @@ export default function StudentSocietiesPage() {
                   <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Calligraphy+Exhibition"
+                        src="https://placehold.co/200x150"
                         alt="Calligraphy Exhibition"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Painting+Workshop"
+                        src="https://placehold.co/200x150"
                         alt="Painting Workshop"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Model+Making"
+                        src="https://placehold.co/200x150"
                         alt="Model Making"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Photography+Exhibition"
+                        src="https://placehold.co/200x150"
                         alt="Photography Exhibition"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>
@@ -471,30 +469,30 @@ export default function StudentSocietiesPage() {
                   <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Cricket+Match"
+                        src="https://placehold.co/200x150"
                         alt="Cricket Match"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Football+Team"
+                        src="https://placehold.co/200x150"
                         alt="Football Team"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Table+Tennis"
+                        src="https://placehold.co/200x150"
                         alt="Table Tennis"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     <div className="relative h-[150px] rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=150&width=200&text=Sports+Day"
+                        src="https://placehold.co/200x150"
                         alt="Sports Day"
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                   </div>
@@ -523,9 +521,9 @@ export default function StudentSocietiesPage() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[200px]">
                   <img
-                    src="/placeholder.svg?height=200&width=400&text=Literary+Festival"
+                    src="https://placehold.co/400x300"
                     alt="Literary Festival"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -550,9 +548,9 @@ export default function StudentSocietiesPage() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[200px]">
                   <img
-                    src="/placeholder.svg?height=200&width=400&text=Art+Exhibition"
+                    src="https://placehold.co/400x300"
                     alt="Art Exhibition"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -577,9 +575,9 @@ export default function StudentSocietiesPage() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[200px]">
                   <img
-                    src="/placeholder.svg?height=200&width=400&text=Sports+Tournament"
+                    src="https://placehold.co/400x300"
                     alt="Sports Tournament"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">

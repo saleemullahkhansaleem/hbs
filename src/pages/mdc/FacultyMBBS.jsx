@@ -33,7 +33,7 @@ export default function FacultyMBBS() {
         {
           name: "Dr. Shazia Muazam",
           designation: "Professor – HOD",
-          image: "/images/about/chairman-profile.png",
+          image: "https://placehold.co/150x150",
         },
         { name: "Dr. Samina Anjum Jaffri", designation: "Professor" },
         { name: "Dr. Naseer-ud-din", designation: "Assistant Professor" },

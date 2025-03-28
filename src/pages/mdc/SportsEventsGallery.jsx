@@ -14,49 +14,49 @@ export default function SportsEventsGallery() {
     sports: [
       {
         id: 1,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Cricket match",
         caption: "Annual cricket tournament",
       },
       {
         id: 2,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Football team",
         caption: "HBS football team",
       },
       {
         id: 3,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Table tennis competition",
         caption: "Inter-college table tennis championship",
       },
       {
         id: 4,
-        src: "/placeholder.svg?height=500&width=500",
+        src: "https://placehold.co/500",
         alt: "Sports day",
         caption: "Annual sports day celebrations",
       },
       {
         id: 5,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Basketball game",
         caption: "Basketball match against rival college",
       },
       {
         id: 6,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Volleyball match",
         caption: "Volleyball tournament finals",
       },
       {
         id: 7,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Athletics event",
         caption: "Track and field competition",
       },
       {
         id: 8,
-        src: "/placeholder.svg?height=500&width=500",
+        src: "https://placehold.co/500",
         alt: "Chess tournament",
         caption: "Inter-class chess championship",
       },
@@ -64,49 +64,49 @@ export default function SportsEventsGallery() {
     events: [
       {
         id: 1,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Annual dinner",
         caption: "Annual dinner celebration",
       },
       {
         id: 2,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Cultural day",
         caption: "Cultural day festivities",
       },
       {
         id: 3,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Graduation ceremony",
         caption: "MBBS Graduation ceremony",
       },
       {
         id: 4,
-        src: "/placeholder.svg?height=500&width=500",
+        src: "https://placehold.co/500",
         alt: "Welcome party",
         caption: "Freshers' welcome party",
       },
       {
         id: 5,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Farewell party",
         caption: "Farewell for graduating batch",
       },
       {
         id: 6,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Seminar",
         caption: "Medical seminar with guest speakers",
       },
       {
         id: 7,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Workshop",
         caption: "Hands-on medical workshop",
       },
       {
         id: 8,
-        src: "/placeholder.svg?height=500&width=500",
+        src: "https://placehold.co/500",
         alt: "College day",
         caption: "College day celebrations",
       },
@@ -114,37 +114,37 @@ export default function SportsEventsGallery() {
     competitions: [
       {
         id: 1,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Debate competition",
         caption: "Inter-college debate competition",
       },
       {
         id: 2,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Quiz competition",
         caption: "Medical quiz championship",
       },
       {
         id: 3,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Art competition",
         caption: "Student art competition",
       },
       {
         id: 4,
-        src: "/placeholder.svg?height=500&width=500",
+        src: "https://placehold.co/500",
         alt: "Science fair",
         caption: "Medical science exhibition",
       },
       {
         id: 5,
-        src: "/placeholder.svg?height=400&width=600",
+        src: "https://placehold.co/600x400",
         alt: "Essay competition",
         caption: "Essay writing contest winners",
       },
       {
         id: 6,
-        src: "/placeholder.svg?height=600&width=400",
+        src: "https://placehold.co/400x600",
         alt: "Talent show",
         caption: "Annual talent show performances",
       },
@@ -257,7 +257,7 @@ export default function SportsEventsGallery() {
                         <img
                           src={image.src || "/placeholder.svg"}
                           alt={image.alt}
-                          className="object-cover transition-transform group-hover:scale-105"
+                          className="object-cover h-full w-full transition-transform group-hover:scale-105"
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
@@ -310,7 +310,7 @@ export default function SportsEventsGallery() {
                         <img
                           src={image.src || "/placeholder.svg"}
                           alt={image.alt}
-                          className="object-cover transition-transform group-hover:scale-105"
+                          className="object-cover h-full w-full transition-transform group-hover:scale-105"
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
@@ -366,7 +366,7 @@ export default function SportsEventsGallery() {
                         <img
                           src={image.src || "/placeholder.svg"}
                           alt={image.alt}
-                          className="object-cover transition-transform group-hover:scale-105"
+                          className="object-cover h-full w-full transition-transform group-hover:scale-105"
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">

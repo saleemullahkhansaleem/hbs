@@ -20,10 +20,10 @@ export default function CollegesLayout() {
         <meta property="og:description" content={metadata.description} />
       </Helmet>
 
-      <SecondaryHeader
+      {/* <SecondaryHeader
         title={metadata.title}
         description={metadata.description}
-      />
+      /> */}
       <div className="relative">
         <SidebarProvider className="">
           <SideNav pageName="Our Colleges" />

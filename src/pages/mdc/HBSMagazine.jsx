@@ -37,9 +37,9 @@ export default function HBSMagazine() {
                 <div className="flex flex-col items-center">
                   <div className="relative h-[300px] w-[200px] mb-4">
                     <img
-                      src="/placeholder.svg?height=300&width=200&text=Urdu+Magazine"
+                      src="https://placehold.co/200x300"
                       alt="HBS Urdu Magazine"
-                      className="object-cover rounded-lg"
+                      className="object-cover h-full w-full rounded-lg"
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-2">URDU VERSION</h3>
@@ -58,9 +58,9 @@ export default function HBSMagazine() {
                 <div className="flex flex-col items-center">
                   <div className="relative h-[300px] w-[200px] mb-4">
                     <img
-                      src="/placeholder.svg?height=300&width=200&text=English+Magazine"
+                      src="https://placehold.co/200x300"
                       alt="HBS English Magazine"
-                      className="object-cover rounded-lg"
+                      className="object-cover h-full w-full rounded-lg"
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-2">ENGLISH VERSION</h3>
@@ -151,9 +151,9 @@ export default function HBSMagazine() {
                 >
                   <div className="relative h-[200px]">
                     <img
-                      src={`/placeholder.svg?height=200&width=150&text=Edition+${year}`}
+                      src="https://placehold.co/150x200"
                       alt={`Magazine Edition ${year}`}
-                      className="object-cover"
+                      className="object-cover h-full w-full"
                     />
                   </div>
                   <div className="p-4 text-center">

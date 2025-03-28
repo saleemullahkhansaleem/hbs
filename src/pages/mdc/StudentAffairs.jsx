@@ -70,9 +70,9 @@ export default function StudentAffairs() {
               </div>
               <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://placehold.co/600x400"
                   alt="Student Affairs Team"
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
@@ -277,9 +277,9 @@ item-4"
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[250px]">
                   <img
-                    src="/placeholder.svg?height=250&width=350"
+                    src="https://placehold.co/350x250"
                     alt="Dr. Jamilah Riaz"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -298,9 +298,9 @@ item-4"
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[250px]">
                   <img
-                    src="/placeholder.svg?height=250&width=350"
+                    src="https://placehold.co/350x250"
                     alt="Mr. Ahmed Khan"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -318,9 +318,9 @@ item-4"
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-[250px]">
                   <img
-                    src="/placeholder.svg?height=250&width=350"
+                    src="https://placehold.co/350x250"
                     alt="Ms. Fatima Ali"
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">

@@ -28,6 +28,7 @@ export default function FacultyBDS() {
     {
       name: "Dr. Shazia Rafique Nawabi",
       role: "Principal",
+      image: "https://placehold.co/150x150",
       qualifications: [
         "BDS",
         "FCPS (Prosthodontics)",
@@ -41,6 +42,7 @@ export default function FacultyBDS() {
     {
       name: "Dr. Naveed Bhatti",
       role: "Vice Principal/Professor",
+      image: "https://placehold.co/150x150",
       qualifications: ["MS"],
       specialty: "Orthodontics",
     },
@@ -471,7 +473,7 @@ function FacultySection({ title, icon, faculty }) {
         <h2 className="text-2xl font-bold ml-2">{title}</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
         {faculty.map((member, index) => (
           <FacultyCard key={index} faculty={member} />
         ))}
@@ -489,8 +491,16 @@ function FacultyCard({ faculty }) {
     >
       <div className="p-6">
         <div className="flex items-start justify-between mb-3">
-          <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-            <Tooth className="h-6 w-6 text-primary" />
+          <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
+            {faculty.image ? (
+              <img
+                src={faculty.image}
+                alt={faculty.name}
+                className="w-full aspect-square object-cover rounded-full border border-primary p-1"
+              />
+            ) : (
+              <Tooth className="h-8 w-8 text-primary" />
+            )}
           </div>
           <Badge
             variant={faculty.featured ? "default" : "outline"}

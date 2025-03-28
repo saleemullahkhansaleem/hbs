@@ -60,9 +60,9 @@ export default function LifeAtHBSPage() {
               </div>
               <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://placehold.co/600x400"
                   alt="HBS Campus"
-                  className="object-cover"
+                  className="object-cover h-full w-full"
                 />
               </div>
             </div>
@@ -134,9 +134,9 @@ export default function LifeAtHBSPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Main Building"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -147,9 +147,9 @@ export default function LifeAtHBSPage() {
 
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Lecture Halls"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -160,9 +160,9 @@ export default function LifeAtHBSPage() {
 
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Laboratories"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -173,9 +173,9 @@ export default function LifeAtHBSPage() {
 
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Library"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -186,9 +186,9 @@ export default function LifeAtHBSPage() {
 
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Cafeteria"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -199,9 +199,9 @@ export default function LifeAtHBSPage() {
 
               <div className="relative h-[250px] rounded-lg overflow-hidden group">
                 <img
-                  src="/placeholder.svg?height=250&width=350"
+                  src="https://placehold.co/350x250"
                   alt="Sports Facilities"
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover h-full w-full transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-4 w-full">
@@ -225,9 +225,9 @@ export default function LifeAtHBSPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://placehold.co/600x400"
                   alt="HBS General Hospital"
-                  className="object-cover"
+                  className="object-cover h-full w-full"
                 />
               </div>
               <div>
@@ -341,9 +341,9 @@ export default function LifeAtHBSPage() {
               </div>
               <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://placehold.co/600x400"
                   alt="HBS Dental Hospital"
-                  className="object-cover"
+                  className="object-cover h-full w-full"
                 />
               </div>
             </div>
