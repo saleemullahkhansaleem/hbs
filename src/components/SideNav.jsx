@@ -164,7 +164,7 @@ export default function SideNav() {
       <SidebarHeader>
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 mt-10"
           title="HBS Medical & Dental College"
         >
           <img
@@ -209,9 +209,10 @@ export default function SideNav() {
                             <SidebarMenuSubItem key={subItem.name}>
                               <SidebarMenuSubButton
                                 onClick={() => setOpenMobile(false)}
+                                className="data-[active=true]:text-primary data-[active=true]:bg-primary/10"
                                 isActive={
                                   subItem.href ===
-                                  "/" + location.pathname.split("/").pop()
+                                  location.pathname.split("/").pop()
                                 }
                                 asChild
                               >
@@ -229,9 +230,10 @@ export default function SideNav() {
                     <SidebarMenuItem key={item.name}>
                       <SidebarMenuButton
                         asChild
+                        className="data-[active=true]:text-primary data-[active=true]:bg-primary/10"
                         onClick={() => setOpenMobile(false)}
                         isActive={
-                          item.href === "/" + location.pathname.split("/").pop()
+                          item.href === location.pathname.split("/").pop()
                         }
                       >
                         <NavLink to={item.href} title={item.name}>
