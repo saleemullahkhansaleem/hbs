@@ -2,33 +2,30 @@ import { Outlet } from "react-router-dom";
 import { SecondaryHeader, SideNav } from "@/components";
 import { Helmet } from "react-helmet-async";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { collegesData } from "@/data";
 
-const metadata = {
-  title: "HBS Medical & Dental College",
-  description: "Shaping the Future of Healthcare",
-};
-
-export default function CollegesLayout() {
+export default function CollegesLayout({ pageName }) {
+  const collegeData = collegesData.find((item) => item.name === pageName) || {};
   return (
     <>
       <Helmet>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content="" />
+        <title>{collegeData.title}</title>
+        <meta name="description" content={collegeData.description} />
+        <meta name="keywords" content={collegeData?.keyword} />
 
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
+        <meta property="og:title" content={collegeData.title} />
+        <meta property="og:description" content={collegeData.description} />
       </Helmet>
 
       {/* <SecondaryHeader
-        title={metadata.title}
-        description={metadata.description}
+        title={collegeData.title}
+        description={collegeData.description}
       /> */}
       <div className="relative">
         <SidebarProvider className="">
-          <SideNav pageName="Our Colleges" />
+          <SideNav collegeData={collegeData} />
           <main className="flex-grow relative">
-            <SidebarTrigger className="m-4 absolute top-0 left-0 z-30" />
+            <SidebarTrigger className="m-4 absolute top-0 left-0 z-20" />
             <Outlet />
           </main>
         </SidebarProvider>

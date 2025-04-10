@@ -47,7 +47,7 @@ export const navigation = [
       },
       {
         name: "HBS College of Rehabilitation & Allied Health Sciences",
-        href: "/colleges/rehabilitation-ahs",
+        href: "/colleges/ahs",
       },
     ],
   },

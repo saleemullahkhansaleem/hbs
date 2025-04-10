@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: "colleges/mdc",
-        element: <CollegesLayout />,
+        element: <CollegesLayout pageName="MDC" />,
         children: [
           {
             path: "",
@@ -122,6 +122,26 @@ const router = createBrowserRouter([
             element: <NotFound />,
           },
         ],
+      },
+      {
+        path: "colleges/paramedics",
+        element: <CollegesLayout pageName="Paramedics" />,
+        children: [],
+      },
+      {
+        path: "colleges/nursing",
+        element: <CollegesLayout pageName="Nursing" />,
+        children: [],
+      },
+      {
+        path: "colleges/pharmacy",
+        element: <CollegesLayout pageName="Pharmacy" />,
+        children: [],
+      },
+      {
+        path: "colleges/ahs",
+        element: <CollegesLayout pageName="AHS" />,
+        children: [],
       },
       {
         path: "programs",
