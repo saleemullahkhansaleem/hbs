@@ -153,7 +153,8 @@ export default function SideNav({ collegeData }) {
           title="HBS Medical & Dental College"
         >
           <img
-            src="/images/logos/logo.png"
+            src={collegeData.logo}
+            // src="/images/logos/logo.png"
             alt="logo"
             height={100}
             className="w-10 bg-white rounded-full"

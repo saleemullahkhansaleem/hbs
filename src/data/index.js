@@ -146,8 +146,8 @@ export const collegesData = [
   {
     title: "HBS College of Paramedics",
     name: "Paramedics",
-    logo: "/images/colleges/hihs/logo.png",
-    banner: "/images/colleges/hihs/banner.jpg",
+    logo: "/images/colleges/paramedics/logo.png",
+    banner: "/images/colleges/paramedics/banner.jpg",
     description:
       "HBS College of Paramedics is a premier institution dedicated to providing quality education in the field of paramedics. Our mission is to shape the future of healthcare by nurturing skilled professionals who are committed to excellence and compassionate care.",
     keyword: "HBS Paramedics, Paramedics College",
