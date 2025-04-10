@@ -17,7 +17,11 @@ import {
   GroundRules,
   HBSMagazine,
   Home,
+  HomeAHS,
   HomeMDC,
+  HomeNursing,
+  HomeParamedics,
+  HomePharmacy,
   LifeAtHBS,
   MediaGallery,
   News,
@@ -126,22 +130,42 @@ const router = createBrowserRouter([
       {
         path: "colleges/paramedics",
         element: <CollegesLayout pageName="Paramedics" />,
-        children: [],
+        children: [
+          {
+            path: "",
+            element: <HomeParamedics />,
+          },
+        ],
       },
       {
         path: "colleges/nursing",
         element: <CollegesLayout pageName="Nursing" />,
-        children: [],
+        children: [
+          {
+            path: "",
+            element: <HomeNursing />,
+          },
+        ],
       },
       {
         path: "colleges/pharmacy",
         element: <CollegesLayout pageName="Pharmacy" />,
-        children: [],
+        children: [
+          {
+            path: "",
+            element: <HomePharmacy />,
+          },
+        ],
       },
       {
         path: "colleges/ahs",
         element: <CollegesLayout pageName="AHS" />,
-        children: [],
+        children: [
+          {
+            path: "",
+            element: <HomeAHS />,
+          },
+        ],
       },
       {
         path: "programs",

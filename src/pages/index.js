@@ -26,6 +26,14 @@ import HBSMagazine from "./mdc/HBSMagazine";
 import StudentAffairs from "./mdc/StudentAffairs";
 import Timetables from "./mdc/Timetables";
 
+import HomeParamedics from "./paramedics/HomeParamedics";
+
+import HomeNursing from "./nursing/HomeNursing";
+
+import HomePharmacy from "./pharmacy/HomePharmacy";
+
+import HomeAHS from "./ahs/HomeAHS";
+
 export {
   Home,
   About,
@@ -54,4 +62,13 @@ export {
   HBSMagazine,
   StudentAffairs,
   Timetables,
+
+  // Paramaedics
+  HomeParamedics,
+  // Nursing
+  HomeNursing,
+  // Pharmacy
+  HomePharmacy,
+  // AHS
+  HomeAHS,
 };
