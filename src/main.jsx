@@ -8,6 +8,10 @@ import {
   About,
   Academics,
   Admissions,
+  AHSAcademics,
+  AHSAdmissions,
+  AHSFaculty,
+  AHSLife,
   Careers,
   CollegesLayout,
   ContactUs,
@@ -26,6 +30,10 @@ import {
   MediaGallery,
   News,
   NotFound,
+  ParamedicAcademics,
+  ParamedicAdmissions,
+  ParamedicFaculty,
+  ParamedicLife,
   PositionsDistinctions,
   Programs,
   QEC,
@@ -135,6 +143,22 @@ const router = createBrowserRouter([
             path: "",
             element: <HomeParamedics />,
           },
+          {
+            path: "academics",
+            element: <ParamedicAcademics />,
+          },
+          {
+            path: "admissions",
+            element: <ParamedicAdmissions />,
+          },
+          {
+            path: "faculty",
+            element: <ParamedicFaculty />,
+          },
+          {
+            path: "life",
+            element: <ParamedicLife />,
+          }
         ],
       },
       {
@@ -164,6 +188,22 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <HomeAHS />,
+          },
+          {
+            path: "ahs-life",
+            element: <AHSLife />,
+          },
+          {
+            path: "faculty",
+            element: <AHSFaculty />,
+          },
+          {
+            path: "academics",
+            element: <AHSAcademics />,
+          },
+          {
+            path: "admissions",
+            element: <AHSAdmissions />,
           },
         ],
       },

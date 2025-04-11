@@ -112,10 +112,10 @@ export default function HomeAHS() {
               </p>
               <Button>Learn More About Our Programs</Button>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 max-w-full">
               <div className="relative">
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/70 rounded-full z-0"></div>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/30 rounded-full z-0"></div>
+                <div className="absolute -top-6 left-6 w-24 h-24 bg-primary/70 rounded-full z-0"></div>
+                <div className="absolute -bottom-6 right-20 w-32 h-32 bg-primary/30 rounded-full z-0"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                   <img
                     src="https://placehold.co/800x600"

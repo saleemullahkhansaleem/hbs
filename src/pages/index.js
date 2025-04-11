@@ -27,12 +27,20 @@ import StudentAffairs from "./mdc/StudentAffairs";
 import Timetables from "./mdc/Timetables";
 
 import HomeParamedics from "./paramedics/HomeParamedics";
+import ParamedicAcademics from "./paramedics/ParamedicAcademics";
+import ParamedicAdmissions from "./paramedics/ParamedicAdmissions";
+import ParamedicFaculty from "./paramedics/ParamedicFaculty";
+import ParamedicLife from "./paramedics/ParamedicLife";
 
 import HomeNursing from "./nursing/HomeNursing";
 
 import HomePharmacy from "./pharmacy/HomePharmacy";
 
 import HomeAHS from "./ahs/HomeAHS";
+import AHSLife from "./ahs/AHSLife";
+import AHSFaculty from "./ahs/AHSFaculty";
+import AHSAcademics from "./ahs/AHSAcademics";
+import AHSAdmissions from "./ahs/AHSAdmissions";
 
 export {
   Home,
@@ -65,10 +73,18 @@ export {
 
   // Paramaedics
   HomeParamedics,
+  ParamedicAcademics,
+  ParamedicAdmissions,
+  ParamedicFaculty,
+  ParamedicLife,
   // Nursing
   HomeNursing,
   // Pharmacy
   HomePharmacy,
   // AHS
   HomeAHS,
+  AHSLife,
+  AHSFaculty,
+  AHSAcademics,
+  AHSAdmissions,
 };

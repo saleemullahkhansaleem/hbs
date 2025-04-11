@@ -317,6 +317,11 @@ export const collegesData = [
             icon: FaClipboardList,
           },
           {
+            name: "Life at AHS",
+            href: "ahs-life",
+            icon: FaUserFriends,
+          },
+          {
             name: "Media Gallery",
             href: "media-gallery",
             icon: FaNewspaper,
