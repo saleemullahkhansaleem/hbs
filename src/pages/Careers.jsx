@@ -69,9 +69,9 @@ export default function Careers() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="https://placehold.co/600x400"
                 alt="Healthcare professionals at HBS"
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Careers() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 icon: Award,
@@ -111,7 +111,7 @@ export default function Careers() {
             ].map((benefit, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow"
+                className="p-6 hover:shadow-lg transition-shadow rounded-none border-none"
               >
                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <benefit.icon className="h-6 w-6 text-primary" />
@@ -287,7 +287,7 @@ export default function Careers() {
                   <div
                     key={index}
                     className={`relative flex items-start ${
-                      index % 2 === 0 ? "md:flex-row-reverse" : ""
+                      index % 2 === 1 ? "md:flex-row-reverse" : ""
                     }`}
                   >
                     <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white absolute left-0 md:left-1/2 transform md:-translate-x-1/2">
@@ -318,7 +318,7 @@ export default function Careers() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Take the first step towards a rewarding career at HBS
           </p>
-          <Button size="lg" className="" variant="secondary">
+          <Button className="text-foreground" variant="outline">
             APPLY NOW
           </Button>
         </div>

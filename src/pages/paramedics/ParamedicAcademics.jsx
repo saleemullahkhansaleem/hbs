@@ -131,9 +131,7 @@ export default function ParamedicAcademics() {
                     <div
                       className={`h-12 min-w-12 rounded-full ${program.color} bg-opacity-20 flex items-center justify-center mr-3`}
                     >
-                      <program.icon
-                        className={`h-6 w-6`}
-                      />
+                      <program.icon className={`h-6 w-6`} />
                     </div>
                     <h3 className="text-xl font-bold">F.Sc {program.title}</h3>
                   </div>
@@ -267,13 +265,13 @@ export default function ParamedicAcademics() {
               </div>
               <div className="md:w-1/2 relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://placehold.co/600x400"
                   alt="Career opportunities"
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                   <div className="p-6">
-                    <p className="text-foreground/50 text-lg font-medium">
+                    <p className="text-primary-foreground/50 text-lg font-medium">
                       Build a rewarding career in the healthcare industry
                     </p>
                   </div>

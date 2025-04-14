@@ -39,7 +39,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Campus Overview */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -66,7 +66,7 @@ export default function ParamedicLife() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <Building className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -74,7 +74,7 @@ export default function ParamedicLife() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <MapPin className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -82,7 +82,7 @@ export default function ParamedicLife() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <Monitor className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -97,7 +97,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Teaching Hospital */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 px-4 bg-muted/50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -124,7 +124,7 @@ export default function ParamedicLife() {
                   high-quality hospital.
                 </p>
                 <div className="flex items-center">
-                  <div className="h-10 w-10 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                     <Hospital className="h-5 w-5 text-primary" />
                   </div>
                   <p className="text-lg font-medium text-primary">
@@ -145,11 +145,11 @@ export default function ParamedicLife() {
       </section>
 
       {/* Laboratories */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/100 mb-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 mb-4">
                 <Microscope className="h-6 w-6 text-primary" />
               </div>
               <h2 className="text-3xl font-bold mb-4">
@@ -216,7 +216,9 @@ export default function ParamedicLife() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2">{lab.name}</h3>
-                    <p className="text-slate-600 text-sm">{lab.description}</p>
+                    <p className="text-muted-foreground text-sm">
+                      {lab.description}
+                    </p>
                   </div>
                 </Card>
               ))}
@@ -226,7 +228,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Classrooms */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 px-4 bg-muted/50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -253,7 +255,7 @@ export default function ParamedicLife() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <BookOpen className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -261,7 +263,7 @@ export default function ParamedicLife() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <Presentation className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -269,7 +271,7 @@ export default function ParamedicLife() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <Users className="h-4 w-4 text-primary" />
                     </div>
                     <p className="text-muted-foreground">
@@ -284,7 +286,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Library */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -309,7 +311,7 @@ export default function ParamedicLife() {
                 </p>
                 <div className="bg-primary/10 p-4 rounded-lg">
                   <div className="flex items-center">
-                    <div className="h-10 w-10 rounded-full bg-primary/100 flex items-center justify-center mr-3">
+                    <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
                       <Library className="h-5 w-5 text-primary" />
                     </div>
                     <p className="text-lg font-medium text-primary">
@@ -331,7 +333,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Student Facilities */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 px-4 bg-muted/50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -345,7 +347,7 @@ export default function ParamedicLife() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Common Rooms */}
               <Card className="p-6 hover:shadow-lg transition-shadow">
-                <div className="h-12 w-12 rounded-full bg-primary/100 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <Gamepad2 className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Common Rooms</h3>
@@ -359,7 +361,7 @@ export default function ParamedicLife() {
 
               {/* Cafeteria */}
               <Card className="p-6 hover:shadow-lg transition-shadow">
-                <div className="h-12 w-12 rounded-full bg-primary/100 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <Coffee className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Cafeteria</h3>
@@ -372,7 +374,7 @@ export default function ParamedicLife() {
 
               {/* Transport */}
               <Card className="p-6 hover:shadow-lg transition-shadow">
-                <div className="h-12 w-12 rounded-full bg-primary/100 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <Bus className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Transport Facilities</h3>
@@ -388,7 +390,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Student Life Gallery */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -422,7 +424,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 px-4 bg-muted/50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -475,7 +477,7 @@ export default function ParamedicLife() {
                     </div>
                     <div>
                       <h3 className="font-bold">{testimonial.name}</h3>
-                      <p className="text-sm text-slate-600">
+                      <p className="text-sm text-muted-foreground">
                         {testimonial.program}
                       </p>
                     </div>
@@ -491,7 +493,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* Location and Contact */}
-      <section className="py-16">
+      <section className="py-16 px-4">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -516,7 +518,7 @@ export default function ParamedicLife() {
                   </h3>
                   <div className="space-y-6">
                     <div className="flex items-start">
-                      <div className="h-10 w-10 rounded-full bg-primary/100 flex items-center justify-center mr-4 mt-1">
+                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
                         <MapPin className="h-5 w-5 text-primary" />
                       </div>
                       <div>
@@ -528,7 +530,7 @@ export default function ParamedicLife() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="h-10 w-10 rounded-full bg-primary/100 flex items-center justify-center mr-4 mt-1">
+                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
                         <Phone className="h-5 w-5 text-primary" />
                       </div>
                       <div>
@@ -537,7 +539,7 @@ export default function ParamedicLife() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="h-10 w-10 rounded-full bg-primary/100 flex items-center justify-center mr-4 mt-1">
+                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 mt-1">
                         <Mail className="h-5 w-5 text-primary" />
                       </div>
                       <div>
@@ -561,7 +563,7 @@ export default function ParamedicLife() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 px-4 bg-primary text-primary-foreground">
         <div className="container">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0">

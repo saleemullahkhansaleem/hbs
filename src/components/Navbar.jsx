@@ -71,21 +71,25 @@ export const navigation = [
   },
   {
     name: "Research and Development",
-    href: "/research-and-development",
+    href: "/rd",
     subItems: [
       {
+        name: "Research and Development",
+        href: "/rd/research-and-development",
+      },
+      { name: "HBS Journal", href: "/rd/hbs-journal" },
+      {
         name: "Conference and Workshops",
-        href: "/research-and-development/conference-workshops",
+        href: "/rd/conference-workshops",
       },
       {
         name: "Research Publications",
-        href: "/research-and-development/research-publications",
+        href: "/rd/research-publications",
       },
       {
         name: "Research Pipeline",
-        href: "/research-and-development/research-pipeline",
+        href: "/rd/research-pipeline",
       },
-      { name: "HBS Journal", href: "/research-and-development/hbs-journal" },
     ],
   },
   {
@@ -128,7 +132,7 @@ export default function Navbar() {
               <div
                 className={`absolute top-full ${
                   index === navigation.length - 1 ? "right-0" : "left-0"
-                } p-2 hidden group-hover:flex flex-col bg-background shadow-lg text-nowrap min-w-60 rounded-b`}
+                } p-2 hidden group-hover:flex flex-col gap-px bg-background shadow-lg text-nowrap min-w-60 rounded-b`}
               >
                 {item?.subItems?.map((subItem, ind) => (
                   <div className="relative group/sub" key={ind}>
@@ -147,7 +151,7 @@ export default function Navbar() {
                     </NavLink>
                     {subItem?.subItems && (
                       <div
-                        className={`absolute right-full p-2 top-0 hidden group-hover/sub:flex flex-col bg-background shadow-lg text-nowrap min-w-48 rounded`}
+                        className={`absolute right-full p-2 top-0 hidden group-hover/sub:flex flex-col gap-px bg-background shadow-lg text-nowrap min-w-48 rounded`}
                       >
                         {subItem?.subItems?.map((sub, i) => (
                           <NavLink

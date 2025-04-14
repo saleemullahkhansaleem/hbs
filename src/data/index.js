@@ -180,6 +180,11 @@ export const collegesData = [
             icon: FaClipboardList,
           },
           {
+            name: "Life at HBS Paramedics",
+            href: "life",
+            icon: FaUserFriends,
+          },
+          {
             name: "Media Gallery",
             href: "media-gallery",
             icon: FaNewspaper,
@@ -226,6 +231,11 @@ export const collegesData = [
             icon: FaClipboardList,
           },
           {
+            name: "Life at HBS Nursing",
+            href: "life",
+            icon: FaUserFriends,
+          },
+          {
             name: "Media Gallery",
             href: "media-gallery",
             icon: FaNewspaper,
@@ -269,6 +279,11 @@ export const collegesData = [
             name: "Admissions",
             href: "admissions",
             icon: FaClipboardList,
+          },
+          {
+            name: "Life at HBS Pharmacy",
+            href: "life",
+            icon: FaUserFriends,
           },
           {
             name: "Media Gallery",

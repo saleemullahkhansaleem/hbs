@@ -12,13 +12,16 @@ import {
   AHSAdmissions,
   AHSFaculty,
   AHSLife,
+  AHSMediaGallery,
   Careers,
   CollegesLayout,
+  ConferencesWorkshops,
   ContactUs,
   DME,
   FacultyBDS,
   FacultyMBBS,
   GroundRules,
+  HBSJournal,
   HBSMagazine,
   Home,
   HomeAHS,
@@ -30,13 +33,26 @@ import {
   MediaGallery,
   News,
   NotFound,
+  NursingAcademics,
+  NursingAdmissions,
+  NursingFaculty,
+  NursingLife,
+  NursingMediaGallery,
   ParamedicAcademics,
   ParamedicAdmissions,
   ParamedicFaculty,
   ParamedicLife,
+  ParamedicMediaGallery,
+  PharmacyAcademics,
+  PharmacyAdmissions,
+  PharmacyFaculty,
+  PharmacyLife,
+  PharmacyMediaGallery,
   PositionsDistinctions,
   Programs,
   QEC,
+  RD,
+  ResearchPublications,
   SportsEventsGallery,
   StudentAffairs,
   StudentFacilities,
@@ -158,7 +174,15 @@ const router = createBrowserRouter([
           {
             path: "life",
             element: <ParamedicLife />,
-          }
+          },
+          {
+            path: "media-gallery",
+            element: <ParamedicMediaGallery />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
         ],
       },
       {
@@ -169,6 +193,30 @@ const router = createBrowserRouter([
             path: "",
             element: <HomeNursing />,
           },
+          {
+            path: "academics",
+            element: <NursingAcademics />,
+          },
+          {
+            path: "admissions",
+            element: <NursingAdmissions />,
+          },
+          {
+            path: "faculty",
+            element: <NursingFaculty />,
+          },
+          {
+            path: "life",
+            element: <NursingLife />,
+          },
+          {
+            path: "media-gallery",
+            element: <NursingMediaGallery />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
         ],
       },
       {
@@ -178,6 +226,30 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <HomePharmacy />,
+          },
+          {
+            path: "academics",
+            element: <PharmacyAcademics />,
+          },
+          {
+            path: "admissions",
+            element: <PharmacyAdmissions />,
+          },
+          {
+            path: "faculty",
+            element: <PharmacyFaculty />,
+          },
+          {
+            path: "life",
+            element: <PharmacyLife />,
+          },
+          {
+            path: "media-gallery",
+            element: <PharmacyMediaGallery />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
           },
         ],
       },
@@ -204,6 +276,36 @@ const router = createBrowserRouter([
           {
             path: "admissions",
             element: <AHSAdmissions />,
+          },
+          {
+            path: "media-gallery",
+            element: <AHSMediaGallery />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
+        ],
+      },
+      {
+        path: "rd",
+        // element: <RD />,
+        children: [
+          {
+            path: "research-and-development",
+            element: <RD />,
+          },
+          {
+            path: "hbs-journal",
+            element: <HBSJournal />,
+          },
+          {
+            path: "conference-workshops",
+            element: <ConferencesWorkshops />,
+          },
+          {
+            path: "research-publications",
+            element: <ResearchPublications />,
           },
         ],
       },
