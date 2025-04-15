@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { ImageIcon, Camera, Trophy, Calendar, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
