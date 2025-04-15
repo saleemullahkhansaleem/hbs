@@ -1,3 +1,6 @@
+import { SecondaryHeader } from "@/components";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Search,
   Filter,
@@ -12,49 +15,32 @@ import {
 
 export default function ResearchPublications() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
-        <div className="absolute inset-0 opacity-20 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Research Publications
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Explore our faculty and student research contributions to the
-              global scientific community
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-blue-50 transition-colors">
-                Browse Publications
-              </button>
-              <button className="border border-white text-white px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-white/10 transition-colors">
-                Submit Your Publication
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SecondaryHeader
+        title="Research Publications"
+        description="Explore our faculty and student research contributions to the
+              global scientific community"
+      />
 
       {/* Search and Filter */}
-      <section className="py-8 bg-white border-b">
-        <div className="container mx-auto px-4">
+      <section className="py-8 bg-background border-b">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-grow relative">
-              <input
+              <Input
                 type="text"
                 placeholder="Search publications by title, author, or keywords"
-                className="w-full p-4 pl-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full h-full px-4 pl-12"
               />
               <Search
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground"
                 size={20}
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <div className="relative">
-                <select className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="appearance-none bg-background border rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-primary">
                   <option>All Departments</option>
                   <option>Clinical Sciences</option>
                   <option>Basic Sciences</option>
@@ -62,7 +48,7 @@ export default function ResearchPublications() {
                   <option>Public Health</option>
                   <option>Medical Education</option>
                 </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-muted-foreground">
                   <svg
                     className="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +59,7 @@ export default function ResearchPublications() {
                 </div>
               </div>
               <div className="relative">
-                <select className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="appearance-none bg-background border rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-primary">
                   <option>All Years</option>
                   <option>2023</option>
                   <option>2022</option>
@@ -81,7 +67,7 @@ export default function ResearchPublications() {
                   <option>2020</option>
                   <option>2019</option>
                 </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-muted-foreground">
                   <svg
                     className="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +77,7 @@ export default function ResearchPublications() {
                   </svg>
                 </div>
               </div>
-              <button className="flex items-center gap-2 px-4 py-4 border border-gray-300 rounded-lg bg-white text-gray-700 hover:bg-gray-50">
+              <button className="flex items-center gap-2 px-4 py-0 border rounded-md bg-background text-muted-foreground hover:bg-muted/50">
                 <Filter size={18} /> More Filters
               </button>
             </div>
@@ -100,21 +86,21 @@ export default function ResearchPublications() {
       </section>
 
       {/* Publication Metrics */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-12 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {publicationMetrics.map((metric, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6 text-center"
+                className="bg-background rounded-lg shadow-md p-6 text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   {metric.icon}
                 </div>
-                <h3 className="text-4xl font-bold text-blue-900 mb-2">
+                <h3 className="text-4xl font-bold text-primary mb-2">
                   {metric.value}
                 </h3>
-                <p className="text-gray-600">{metric.label}</p>
+                <p className="text-muted-foreground">{metric.label}</p>
               </div>
             ))}
           </div>
@@ -122,38 +108,38 @@ export default function ResearchPublications() {
       </section>
 
       {/* Featured Publications */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Featured Publications
-          </h2>
+      <section className="py-16 bg-background">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Featured Publications</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredPublications.map((publication, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-700"
+                className="bg-muted/40 rounded-lg shadow-md p-6 border-l-4 border-primary"
               >
                 <div className="flex justify-between mb-4">
-                  <span className="text-sm text-blue-700 font-medium">
+                  <span className="text-sm text-primary font-medium">
                     {publication.journal}
                   </span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-foreground/40">
                     {publication.year}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                <h3 className="text-xl font-semibold mb-3">
                   {publication.title}
                 </h3>
-                <p className="text-gray-600 mb-2 italic">
+                <p className="text-muted-foreground mb-2 italic">
                   {publication.authors}
                 </p>
-                <p className="text-gray-600 mb-4">{publication.abstract}</p>
+                <p className="text-muted-foreground mb-4">
+                  {publication.abstract}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {publication.keywords.map((keyword, kidx) => (
                     <span
                       key={kidx}
-                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-primary/5 text-primary px-3 py-1 rounded-full text-sm"
                     >
                       {keyword}
                     </span>
@@ -162,13 +148,13 @@ export default function ResearchPublications() {
                 <div className="flex flex-wrap gap-4 mt-4">
                   <a
                     href={publication.doi}
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     <ExternalLink size={16} /> View on Publisher Site
                   </a>
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     <Download size={16} /> PDF
                   </a>
@@ -180,15 +166,13 @@ export default function ResearchPublications() {
       </section>
 
       {/* Recent Publications */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Recent Publications
-            </h2>
+            <h2 className="text-3xl font-bold">Recent Publications</h2>
             <div className="flex items-center gap-2">
-              <span className="text-gray-600">Sort by:</span>
-              <select className="px-3 py-2 border border-gray-300 rounded-md bg-white text-gray-700">
+              <span className="text-muted-foreground">Sort by:</span>
+              <select className="px-3 py-2 border rounded-md bg-background text-muted-foreground">
                 <option>Most Recent</option>
                 <option>Most Cited</option>
                 <option>Alphabetical</option>
@@ -198,26 +182,29 @@ export default function ResearchPublications() {
 
           <div className="space-y-6">
             {recentPublications.map((publication, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <div
+                key={index}
+                className="bg-background rounded-lg shadow-md p-6"
+              >
                 <div className="flex justify-between mb-2">
-                  <span className="text-sm text-blue-700 font-medium">
+                  <span className="text-sm text-primary font-medium">
                     {publication.journal}
                   </span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-muted/500">
                     {publication.date}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                <h3 className="text-xl font-semibold mb-2">
                   {publication.title}
                 </h3>
-                <p className="text-gray-600 mb-4 italic">
+                <p className="text-muted-foreground mb-4 italic">
                   {publication.authors}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {publication.tags.map((tag, tidx) => (
                     <span
                       key={tidx}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-muted/50 text-muted-foreground px-3 py-1 rounded-full text-xs"
                     >
                       {tag}
                     </span>
@@ -227,24 +214,24 @@ export default function ResearchPublications() {
                   <div className="flex gap-4">
                     <a
                       href="#"
-                      className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                      className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                     >
                       Abstract <ChevronRight size={16} />
                     </a>
                     <a
                       href="#"
-                      className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                      className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                     >
                       <Download size={16} /> PDF
                     </a>
                     <a
                       href="#"
-                      className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                      className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                     >
                       <ExternalLink size={16} /> DOI
                     </a>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-muted-foreground">
                     <span>Citations: {publication.citations}</span>
                   </div>
                 </div>
@@ -254,25 +241,25 @@ export default function ResearchPublications() {
 
           <div className="mt-8 flex justify-center">
             <div className="flex items-center gap-2">
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 &lt;
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-blue-700 text-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-primary text-primary-foreground">
                 1
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 2
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 3
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 4
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 5
               </button>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-10 h-10 flex items-center justify-center rounded-md border bg-background">
                 &gt;
               </button>
             </div>
@@ -281,9 +268,9 @@ export default function ResearchPublications() {
       </section>
 
       {/* Publication by Department */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+      <section className="py-16 bg-background">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">
             Publications by Department
           </h2>
 
@@ -292,20 +279,20 @@ export default function ResearchPublications() {
               <a
                 key={index}
                 href="#"
-                className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+                className="bg-background rounded-lg shadow-md p-6 border border-muted hover:shadow-lg transition-shadow"
               >
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {department.name}
-                  </h3>
-                  <ArrowUpRight size={18} className="text-blue-700" />
+                  <h3 className="text-xl font-semibold">{department.name}</h3>
+                  <ArrowUpRight size={18} className="text-primary" />
                 </div>
-                <p className="text-gray-600 mb-4">{department.description}</p>
+                <p className="text-muted-foreground mb-4">
+                  {department.description}
+                </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-blue-700 font-medium">
+                  <span className="text-primary font-medium">
                     {department.publicationCount} Publications
                   </span>
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-muted/500 text-sm">
                     Last updated: {department.lastUpdated}
                   </span>
                 </div>
@@ -316,32 +303,30 @@ export default function ResearchPublications() {
       </section>
 
       {/* Top Researchers */}
-      <section className="py-16 bg-blue-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Top Researchers
-          </h2>
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Top Researchers</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {topResearchers.map((researcher, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-background rounded-lg shadow-md overflow-hidden"
               >
-                <div className="h-48 bg-gray-200">
+                <div className="h-48 bg-muted">
                   <img
-                    src={`/placeholder.svg?height=300&width=300&text=Researcher+${
-                      index + 1
-                    }`}
+                    src={`https://placehold.co/300x200`}
                     alt={researcher.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1 text-gray-900">
+                  <h3 className="text-xl font-semibold mb-1">
                     {researcher.name}
                   </h3>
-                  <p className="text-gray-600 mb-3">{researcher.department}</p>
+                  <p className="text-muted-foreground mb-3">
+                    {researcher.department}
+                  </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between text-sm">
                       <span>Publications</span>
@@ -362,7 +347,7 @@ export default function ResearchPublications() {
                   </div>
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     View profile <ChevronRight size={16} />
                   </a>
@@ -374,63 +359,61 @@ export default function ResearchPublications() {
       </section>
 
       {/* Publication Resources */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Resources for Researchers
-          </h2>
+      <section className="py-16 bg-background">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Resources for Researchers</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6">
-              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <BookOpen size={24} className="text-blue-700" />
+            <div className="bg-primary/5 rounded-lg p-6">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <BookOpen size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3">
                 Publication Guidelines
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 Learn about our institutional guidelines for research
                 publications, authorship criteria, and ethical standards.
               </p>
               <a
                 href="#"
-                className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
               >
                 View guidelines <ChevronRight size={16} />
               </a>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6">
-              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <Users size={24} className="text-blue-700" />
+            <div className="bg-primary/5 rounded-lg p-6">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Users size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3">
                 Research Collaboration
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 Explore opportunities for research collaboration with other
                 departments, institutions, and industry partners.
               </p>
               <a
                 href="#"
-                className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
               >
                 Learn more <ChevronRight size={16} />
               </a>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6">
-              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <Calendar size={24} className="text-blue-700" />
+            <div className="bg-primary/5 rounded-lg p-6">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Calendar size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3">
                 Publication Support
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 Access resources for manuscript preparation, statistical
                 analysis, and publication fee support.
               </p>
               <a
                 href="#"
-                className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
               >
                 Access resources <ChevronRight size={16} />
               </a>
@@ -440,18 +423,18 @@ export default function ResearchPublications() {
       </section>
 
       {/* Submit Publication */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Have You Published Recently?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-foreground/70 mb-8 max-w-3xl mx-auto">
             Submit your recent publication to be included in our institutional
             repository and featured on our website
           </p>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors">
+          <Button size="lg" variant="outline" className="text-foreground">
             Submit Your Publication
-          </button>
+          </Button>
         </div>
       </section>
     </div>
@@ -463,22 +446,22 @@ const publicationMetrics = [
   {
     value: "1,200+",
     label: "Total Publications",
-    icon: <BookOpen size={24} className="text-blue-700" />,
+    icon: <BookOpen size={24} className="text-primary" />,
   },
   {
     value: "250+",
     label: "Publications in 2023",
-    icon: <Calendar size={24} className="text-blue-700" />,
+    icon: <Calendar size={24} className="text-primary" />,
   },
   {
     value: "15,000+",
     label: "Total Citations",
-    icon: <Users size={24} className="text-blue-700" />,
+    icon: <Users size={24} className="text-primary" />,
   },
   {
     value: "85+",
     label: "International Collaborations",
-    icon: <ExternalLink size={24} className="text-blue-700" />,
+    icon: <ExternalLink size={24} className="text-primary" />,
   },
 ];
 

@@ -1,3 +1,17 @@
+import { SecondaryHeader } from "@/components";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Calendar,
   MapPin,
@@ -8,41 +22,25 @@ import {
   ChevronRight,
   Filter,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ConferencesWorkshops() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
-        <div className="absolute inset-0 opacity-20 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Conferences & Workshops
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Fostering knowledge exchange and professional development through
-              academic events
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-blue-50 transition-colors">
-                Upcoming Events <ArrowRight size={18} />
-              </button>
-              <button className="border border-white text-white px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-white/10 transition-colors">
-                Submit a Proposal
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SecondaryHeader
+        title="Conferences & Workshops"
+        description="Fostering knowledge exchange and professional development through
+              academic events"
+      />
 
       {/* Featured Conference */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-md">
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl overflow-hidden shadow-md">
             <div className="grid grid-cols-1 lg:grid-cols-3">
-              <div className="lg:col-span-1 bg-blue-800 text-white p-8 flex flex-col justify-center">
-                <div className="mb-4 inline-block bg-blue-700 px-3 py-1 rounded-md text-sm font-medium">
+              <div className="lg:col-span-1 bg-primary text-primary-foreground p-8 flex flex-col justify-center">
+                <div className="mb-4 inline-block bg-primary px-3 py-1 rounded-md text-sm font-medium">
                   Featured Event
                 </div>
                 <h2 className="text-3xl font-bold mb-4">
@@ -63,16 +61,16 @@ export default function ConferencesWorkshops() {
                   </div>
                 </div>
                 <div className="mt-auto">
-                  <button className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors">
+                  <Button variant="outline" className="text-foreground">
                     Register Now
-                  </button>
+                  </Button>
                 </div>
               </div>
               <div className="lg:col-span-2 p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                <h3 className="text-2xl font-semibold mb-4">
                   Transforming Medical Education: Innovation and Excellence
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-muted-foreground mb-6">
                   Join us for the 5th International Conference on Medical
                   Education, bringing together educators, researchers, and
                   healthcare professionals from around the world to discuss the
@@ -80,71 +78,69 @@ export default function ConferencesWorkshops() {
                   education.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                  <div className="bg-background p-4 rounded-lg shadow-sm">
+                    <h4 className="font-semibold mb-2">
                       Conference Highlights
                     </h4>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Keynote speeches by international experts</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Interactive workshops and panel discussions</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Research paper presentations</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Networking opportunities</span>
                       </li>
                     </ul>
                   </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      Key Themes
-                    </h4>
-                    <ul className="space-y-2 text-gray-600">
+                  <div className="bg-background p-4 rounded-lg shadow-sm">
+                    <h4 className="font-semibold mb-2">Key Themes</h4>
+                    <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Technology-enhanced learning</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Competency-based medical education</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Assessment strategies</span>
                       </li>
                       <li className="flex items-start">
                         <ChevronRight
                           size={18}
-                          className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                          className="text-primary mt-1 mr-2 flex-shrink-0"
                         />
                         <span>Faculty development</span>
                       </li>
@@ -154,13 +150,13 @@ export default function ConferencesWorkshops() {
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     View full program <ChevronRight size={16} />
                   </a>
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     <Download size={16} /> Download brochure
                   </a>
@@ -172,17 +168,15 @@ export default function ConferencesWorkshops() {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Upcoming Events
-            </h2>
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap gap-4 justify-between items-center mb-8">
+            <h2 className="text-3xl font-bold">Upcoming Events</h2>
             <div className="flex items-center gap-2">
-              <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 hover:bg-gray-50">
+              <button className="flex items-center gap-2 px-4 py-2 border rounded-md bg-background text-muted-foreground hover:bg-muted/50">
                 <Filter size={16} /> Filter
               </button>
-              <select className="px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700">
+              <select className="px-4 py-2 border rounded-md bg-background text-muted-foreground">
                 <option>All Categories</option>
                 <option>Conferences</option>
                 <option>Workshops</option>
@@ -196,57 +190,55 @@ export default function ConferencesWorkshops() {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-background rounded-lg shadow-md overflow-hidden"
               >
-                <div className="h-48 bg-gray-200 relative">
+                <div className="h-48 bg-muted relative">
                   <img
-                    src={`/placeholder.svg?height=300&width=500&text=Event+Image+${
-                      index + 1
-                    }`}
+                    src={`https:placehold.co/500x300`}
                     alt={event.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-blue-700 text-white px-3 py-1 rounded-md text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm font-medium">
                     {event.type}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
-                    {event.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-3">{event.title}</h3>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center gap-3 text-gray-600">
-                      <Calendar size={18} className="text-blue-700" />
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <Calendar size={18} className="text-primary" />
                       <span>{event.date}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-600">
-                      <MapPin size={18} className="text-blue-700" />
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <MapPin size={18} className="text-primary" />
                       <span>{event.location}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-600">
-                      <Clock size={18} className="text-blue-700" />
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <Clock size={18} className="text-primary" />
                       <span>{event.duration}</span>
                     </div>
                   </div>
-                  <p className="text-gray-600 mb-6">{event.description}</p>
+                  <p className="text-muted-foreground mb-6">
+                    {event.description}
+                  </p>
                   <div className="flex justify-between items-center">
                     <span
                       className={`px-3 py-1 rounded-md text-sm font-medium ${
                         event.registrationStatus === "Open"
-                          ? "bg-green-100 text-green-800"
+                          ? "bg-green-200 text-green-800"
                           : event.registrationStatus === "Closing Soon"
-                          ? "bg-yellow-100 text-yellow-800"
-                          : "bg-red-100 text-red-800"
+                          ? "bg-yellow-200 text-yellow-800"
+                          : "bg-red-200 text-red-800"
                       }`}
                     >
                       {event.registrationStatus}
                     </span>
-                    <a
-                      href="#"
-                      className="text-blue-700 font-medium hover:text-blue-800"
+                    <Link
+                      to="#"
+                      className="text-primary font-medium hover:underline underline-offset-4"
                     >
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -256,7 +248,7 @@ export default function ConferencesWorkshops() {
           <div className="mt-8 text-center">
             <a
               href="#"
-              className="inline-flex items-center gap-2 text-blue-700 font-medium hover:text-blue-800"
+              className="inline-flex items-center gap-2 text-primary font-medium hover:underline underline-offset-4"
             >
               View all upcoming events <ArrowRight size={18} />
             </a>
@@ -265,27 +257,27 @@ export default function ConferencesWorkshops() {
       </section>
 
       {/* Past Events */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Past Events</h2>
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Past Events</h2>
 
           <div className="overflow-x-auto">
-            <table className="min-w-full bg-white border border-gray-200">
+            <table className="min-w-full bg-background border border-muted">
               <thead>
-                <tr className="bg-gray-50">
-                  <th className="py-3 px-4 text-left text-gray-700 font-semibold border-b">
+                <tr className="bg-muted/50">
+                  <th className="py-3 px-4 text-left text-muted-foreground font-semibold border-b">
                     Event Name
                   </th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-semibold border-b">
+                  <th className="py-3 px-4 text-left text-muted-foreground font-semibold border-b">
                     Type
                   </th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-semibold border-b">
+                  <th className="py-3 px-4 text-left text-muted-foreground font-semibold border-b">
                     Date
                   </th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-semibold border-b">
+                  <th className="py-3 px-4 text-left text-muted-foreground font-semibold border-b">
                     Location
                   </th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-semibold border-b">
+                  <th className="py-3 px-4 text-left text-muted-foreground font-semibold border-b">
                     Resources
                   </th>
                 </tr>
@@ -294,19 +286,21 @@ export default function ConferencesWorkshops() {
                 {pastEvents.map((event, index) => (
                   <tr
                     key={index}
-                    className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                    className={
+                      index % 2 === 0 ? "bg-background" : "bg-muted/50"
+                    }
                   >
                     <td className="py-3 px-4 border-b">{event.name}</td>
                     <td className="py-3 px-4 border-b">
                       <span
                         className={`px-2 py-1 rounded-md text-xs font-medium ${
                           event.type === "Conference"
-                            ? "bg-blue-100 text-blue-800"
+                            ? "bg-primary/10 text-primary"
                             : event.type === "Workshop"
-                            ? "bg-green-100 text-green-800"
+                            ? "bg-green-200 text-green-800"
                             : event.type === "Seminar"
-                            ? "bg-purple-100 text-purple-800"
-                            : "bg-gray-100 text-gray-800"
+                            ? "bg-purple-200 text-purple-800"
+                            : "bg-gray-200 text-gray-800"
                         }`}
                       >
                         {event.type}
@@ -319,7 +313,7 @@ export default function ConferencesWorkshops() {
                         {event.resources.photos && (
                           <a
                             href="#"
-                            className="text-blue-700 hover:text-blue-800"
+                            className="text-primary hover:underline underline-offset-4"
                           >
                             Photos
                           </a>
@@ -327,7 +321,7 @@ export default function ConferencesWorkshops() {
                         {event.resources.presentations && (
                           <a
                             href="#"
-                            className="text-blue-700 hover:text-blue-800"
+                            className="text-primary hover:underline underline-offset-4"
                           >
                             Presentations
                           </a>
@@ -335,7 +329,7 @@ export default function ConferencesWorkshops() {
                         {event.resources.proceedings && (
                           <a
                             href="#"
-                            className="text-blue-700 hover:text-blue-800"
+                            className="text-primary hover:underline underline-offset-4"
                           >
                             Proceedings
                           </a>
@@ -343,7 +337,7 @@ export default function ConferencesWorkshops() {
                         {event.resources.videos && (
                           <a
                             href="#"
-                            className="text-blue-700 hover:text-blue-800"
+                            className="text-primary hover:underline underline-offset-4"
                           >
                             Videos
                           </a>
@@ -358,19 +352,19 @@ export default function ConferencesWorkshops() {
 
           <div className="mt-6 flex justify-center">
             <div className="flex items-center gap-2">
-              <button className="w-8 h-8 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-8 h-8 flex items-center justify-center rounded-md border bg-background">
                 &lt;
               </button>
-              <button className="w-8 h-8 flex items-center justify-center rounded-md border border-gray-300 bg-blue-700 text-white">
+              <button className="w-8 h-8 flex items-center justify-center rounded-md border bg-primary text-primary-foreground">
                 1
               </button>
-              <button className="w-8 h-8 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-8 h-8 flex items-center justify-center rounded-md border bg-background">
                 2
               </button>
-              <button className="w-8 h-8 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-8 h-8 flex items-center justify-center rounded-md border bg-background">
                 3
               </button>
-              <button className="w-8 h-8 flex items-center justify-center rounded-md border border-gray-300 bg-white">
+              <button className="w-8 h-8 flex items-center justify-center rounded-md border bg-background">
                 &gt;
               </button>
             </div>
@@ -379,29 +373,27 @@ export default function ConferencesWorkshops() {
       </section>
 
       {/* Propose an Event */}
-      <section className="py-16 bg-blue-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-primary/5">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Propose an Event
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <h2 className="text-3xl font-bold mb-6">Propose an Event</h2>
+              <p className="text-lg text-muted-foreground mb-6">
                 HBS welcomes proposals for conferences, workshops, seminars, and
                 other academic events that align with our research priorities
                 and educational mission. If you have an idea for an event, we'd
                 love to hear from you.
               </p>
               <div className="space-y-6">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                <div className="bg-background p-4 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-semibold mb-3">
                     Types of Events We Support
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
+                  <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <div>
                         <span className="font-medium">
@@ -414,7 +406,7 @@ export default function ConferencesWorkshops() {
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <div>
                         <span className="font-medium">Workshops:</span> Hands-on
@@ -424,7 +416,7 @@ export default function ConferencesWorkshops() {
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <div>
                         <span className="font-medium">Seminars:</span> Focused
@@ -434,7 +426,7 @@ export default function ConferencesWorkshops() {
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <div>
                         <span className="font-medium">Webinars:</span> Online
@@ -443,13 +435,13 @@ export default function ConferencesWorkshops() {
                     </li>
                   </ul>
                 </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                <div className="bg-background p-4 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-semibold mb-3">
                     Proposal Process
                   </h3>
-                  <ol className="space-y-4 text-gray-600">
+                  <ol className="space-y-4 text-muted-foreground">
                     <li className="flex items-start">
-                      <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-medium mr-3 flex-shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium mr-3 flex-shrink-0">
                         1
                       </div>
                       <div>
@@ -461,7 +453,7 @@ export default function ConferencesWorkshops() {
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-medium mr-3 flex-shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium mr-3 flex-shrink-0">
                         2
                       </div>
                       <div>
@@ -471,7 +463,7 @@ export default function ConferencesWorkshops() {
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-medium mr-3 flex-shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium mr-3 flex-shrink-0">
                         3
                       </div>
                       <div>
@@ -481,7 +473,7 @@ export default function ConferencesWorkshops() {
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-medium mr-3 flex-shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium mr-3 flex-shrink-0">
                         4
                       </div>
                       <div>
@@ -494,105 +486,108 @@ export default function ConferencesWorkshops() {
               </div>
             </div>
             <div>
-              <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-6 text-gray-900">
+              <div className="bg-background p-8 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-6">
                   Event Proposal Form
                 </h3>
                 <form>
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                      <Label className="block text-sm font-medium text-muted-foreground mb-1">
                         Event Title
-                      </label>
-                      <input
+                      </Label>
+                      <Input
                         type="text"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full"
                         placeholder="Enter event title"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                      <Label className="block text-sm font-medium text-muted-foreground mb-1">
                         Event Type
-                      </label>
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option>Select event type</option>
-                        <option>Conference</option>
-                        <option>Workshop</option>
-                        <option>Seminar</option>
-                        <option>Webinar</option>
-                        <option>Other</option>
-                      </select>
+                      </Label>
+                      <Select>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="Select event type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectGroup>
+                            <SelectLabel>Select event type</SelectLabel>
+                            <SelectItem value="conference">
+                              Conference
+                            </SelectItem>
+                            <SelectItem value="workshop">Workshop</SelectItem>
+                            <SelectItem value="seminar">Seminar</SelectItem>
+                            <SelectItem value="webinar">Webinar</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectGroup>
+                        </SelectContent>
+                      </Select>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                        <Label className="block text-sm font-medium text-muted-foreground mb-1">
                           Proposed Date
-                        </label>
-                        <input
-                          type="date"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
+                        </Label>
+                        <Input type="date" className="w-full" />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                        <Label className="block text-sm font-medium text-muted-foreground mb-1">
                           Expected Duration
-                        </label>
-                        <input
+                        </Label>
+                        <Input
                           type="text"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full"
                           placeholder="e.g., 2 days, 4 hours"
                         />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                      <Label className="block text-sm font-medium text-muted-foreground mb-1">
                         Brief Description
-                      </label>
-                      <textarea
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      </Label>
+                      <Textarea
+                        className="w-full"
                         rows="4"
                         placeholder="Describe your event and its objectives"
-                      ></textarea>
+                      ></Textarea>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                      <Label className="block text-sm font-medium text-muted-foreground mb-1">
                         Target Audience
-                      </label>
-                      <input
+                      </Label>
+                      <Input
                         type="text"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full"
                         placeholder="e.g., Medical students, Researchers, Clinicians"
                       />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                        <Label className="block text-sm font-medium text-muted-foreground mb-1">
                           Your Name
-                        </label>
-                        <input
+                        </Label>
+                        <Input
                           type="text"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full"
                           placeholder="Enter your name"
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                        <Label className="block text-sm font-medium text-muted-foreground mb-1">
                           Email Address
-                        </label>
-                        <input
+                        </Label>
+                        <Input
                           type="email"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full"
                           placeholder="Enter your email address"
                         />
                       </div>
                     </div>
                     <div>
-                      <button
-                        type="submit"
-                        className="w-full bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
-                      >
+                      <Button type="submit" className="w-full">
                         Submit Proposal
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </form>
@@ -603,43 +598,41 @@ export default function ConferencesWorkshops() {
       </section>
 
       {/* Venue Information */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Venues</h2>
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Our Venues</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {venues.map((venue, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="border rounded-lg shadow-md overflow-hidden"
               >
-                <div className="h-48 bg-gray-200">
+                <div className="h-48 bg-muted">
                   <img
-                    src={`/placeholder.svg?height=300&width=500&text=Venue+Image+${
-                      index + 1
-                    }`}
+                    src={`https://placehold.co/500x300`}
                     alt={venue.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
-                    {venue.name}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{venue.description}</p>
+                  <h3 className="text-xl font-semibold mb-3">{venue.name}</h3>
+                  <p className="text-muted-foreground mb-4">
+                    {venue.description}
+                  </p>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center gap-3 text-gray-600">
-                      <MapPin size={18} className="text-blue-700" />
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <MapPin size={18} className="text-primary" />
                       <span>{venue.location}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-600">
-                      <Users size={18} className="text-blue-700" />
+                    <div className="flex items-center gap-3 text-muted-foreground">
+                      <Users size={18} className="text-primary" />
                       <span>Capacity: {venue.capacity}</span>
                     </div>
                   </div>
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     View details <ChevronRight size={16} />
                   </a>
@@ -651,27 +644,25 @@ export default function ConferencesWorkshops() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Contact the Events Team
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Contact the Events Team</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
             For inquiries regarding upcoming events, venue bookings, or event
             proposals
           </p>
-          <div className="inline-flex flex-col sm:flex-row gap-4 bg-white p-6 rounded-lg shadow-md">
-            <div className="px-6 py-3 border-r border-gray-200">
-              <p className="font-semibold text-gray-900">Email</p>
-              <p className="text-blue-700">events@hbs.edu.pk</p>
+          <div className="inline-flex flex-col sm:flex-row gap-4 bg-background p-6 rounded-lg shadow-md">
+            <div className="px-6 py-3 border-r border-muted">
+              <p className="font-semibold">Email</p>
+              <p className="text-primary">events@hbs.edu.pk</p>
             </div>
-            <div className="px-6 py-3 border-r border-gray-200">
-              <p className="font-semibold text-gray-900">Phone</p>
-              <p className="text-blue-700">+92-51-1234567</p>
+            <div className="px-6 py-3 border-r border-muted">
+              <p className="font-semibold">Phone</p>
+              <p className="text-primary">+92-51-1234567</p>
             </div>
             <div className="px-6 py-3">
-              <p className="font-semibold text-gray-900">Address</p>
-              <p className="text-blue-700">
+              <p className="font-semibold">Address</p>
+              <p className="text-primary">
                 HBS Conference Center, Islamabad, Pakistan
               </p>
             </div>

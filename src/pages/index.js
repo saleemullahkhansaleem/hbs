@@ -13,6 +13,7 @@ import RD from "./rd/RD";
 import HBSJournal from "./rd/HBSJournal";
 import ConferencesWorkshops from "./rd/ConferencesWorkshops";
 import ResearchPublications from "./rd/ResearchPublications";
+import ResearchPipeline from "./rd/ResearchPipeline";
 
 import CollegesLayout from "./mdc/CollegesLayout";
 import HomeMDC from "./mdc/HomeMDC";
@@ -75,6 +76,7 @@ export {
   HBSJournal,
   ConferencesWorkshops,
   ResearchPublications,
+  ResearchPipeline,
   //   MDC
   CollegesLayout,
   HomeMDC,

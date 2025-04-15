@@ -45,7 +45,7 @@ export default function Programs() {
             </div>
 
             {/* Medical Programs */}
-            <TabsContent value="medical" className="space-y-8">
+            <TabsContent value="medical" className="space-y-6">
               <Card className="overflow-hidden">
                 <div className="md:flex">
                   <div className="md:w-1/3 bg-primary/10 p-8 flex flex-col justify-center items-center text-center">
@@ -100,7 +100,7 @@ export default function Programs() {
             </TabsContent>
 
             {/* Dental Programs */}
-            <TabsContent value="dental" className="space-y-8">
+            <TabsContent value="dental" className="space-y-6">
               <Card className="overflow-hidden">
                 <div className="md:flex">
                   <div className="md:w-1/3 bg-primary/10 p-8 flex flex-col justify-center items-center text-center">
@@ -159,7 +159,7 @@ export default function Programs() {
             </TabsContent>
 
             {/* Allied Health Programs */}
-            <TabsContent value="allied" className="space-y-8">
+            <TabsContent value="allied" className="space-y-6">
               <Card className="overflow-hidden">
                 <div className="p-8">
                   <div className="flex items-center mb-6">
@@ -168,7 +168,7 @@ export default function Programs() {
                       College of Rehabilitation Sciences
                     </h3>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div className="grid md:grid-cols-2 gap-2 mb-6">
                     {[
                       {
                         name: "Doctor of Physiotherapy (DPT)",
@@ -187,7 +187,7 @@ export default function Programs() {
                     ].map((program, index) => (
                       <div
                         key={index}
-                        className="flex items-center p-4 bg-muted rounded-lg"
+                        className="flex items-center p-4 bg-muted/50"
                       >
                         <program.icon className="h-6 w-6 text-primary mr-3" />
                         <span className="font-medium">{program.name}</span>
@@ -211,7 +211,7 @@ export default function Programs() {
                     <HeartPulse className="h-8 w-8 text-primary mr-3" />
                     <h3 className="text-2xl font-bold">College of Nursing</h3>
                   </div>
-                  <div className="grid md:grid-cols-3 gap-6 mb-6">
+                  <div className="grid md:grid-cols-3 gap-2 mb-6">
                     {[
                       "B.Sc Nursing",
                       "General Nursing",
@@ -219,7 +219,7 @@ export default function Programs() {
                     ].map((program, index) => (
                       <div
                         key={index}
-                        className="flex items-center p-4 bg-muted rounded-lg"
+                        className="flex items-center p-4 bg-muted/50"
                       >
                         <span className="font-medium">{program}</span>
                       </div>
@@ -244,7 +244,7 @@ export default function Programs() {
                       College of Paramedics
                     </h3>
                   </div>
-                  <div className="grid md:grid-cols-3 gap-6 mb-6">
+                  <div className="grid md:grid-cols-3 gap-2 mb-6">
                     {[
                       "Laboratory Technician",
                       "Radiographer",
@@ -255,7 +255,7 @@ export default function Programs() {
                     ].map((program, index) => (
                       <div
                         key={index}
-                        className="flex items-center p-4 bg-muted rounded-lg"
+                        className="flex items-center p-4 bg-muted/50"
                       >
                         <span className="font-medium">{program}</span>
                       </div>
@@ -277,7 +277,7 @@ export default function Programs() {
       </section>
 
       {/* Program Highlights */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-muted/50">
         <div className="container max-w-7xl mx-auto px-4 md:px-0">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">Program Highlights</h2>
@@ -286,7 +286,7 @@ export default function Programs() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4">
             {[
               {
                 icon: Stethoscope,
@@ -325,16 +325,16 @@ export default function Programs() {
                   "Comprehensive career counseling and placement assistance for graduates",
               },
             ].map((highlight, index) => (
-              <Card
+              <div
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow"
+                className="p-6 hover:shadow-lg transition-shadow bg-background"
               >
                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <highlight.icon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{highlight.title}</h3>
                 <p className="text-muted-foreground">{highlight.description}</p>
-              </Card>
+              </div>
             ))}
           </div>
         </div>

@@ -52,6 +52,7 @@ import {
   Programs,
   QEC,
   RD,
+  ResearchPipeline,
   ResearchPublications,
   SportsEventsGallery,
   StudentAffairs,
@@ -306,6 +307,10 @@ const router = createBrowserRouter([
           {
             path: "research-publications",
             element: <ResearchPublications />,
+          },
+          {
+            path: "research-pipeline",
+            element: <ResearchPipeline />,
           },
         ],
       },

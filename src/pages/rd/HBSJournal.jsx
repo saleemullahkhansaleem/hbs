@@ -1,3 +1,5 @@
+import { SecondaryHeader } from "@/components";
+import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   BookOpen,
@@ -12,40 +14,21 @@ import {
 
 export default function HBSJournal() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
-        <div className="absolute inset-0 opacity-20 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              HBS Journal of Medical Sciences
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              A peer-reviewed journal publishing cutting-edge research in
-              healthcare and medical sciences
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-blue-50 transition-colors">
-                Current Issue <ArrowRight size={18} />
-              </button>
-              <button className="border border-white text-white px-6 py-3 rounded-md font-medium flex items-center gap-2 hover:bg-white/10 transition-colors">
-                Submit Manuscript
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SecondaryHeader
+        title="HBS Journal of Medical Sciences"
+        description="A peer-reviewed journal publishing cutting-edge research in
+              healthcare and medical sciences"
+      />
 
       {/* About the Journal */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                About the Journal
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <h2 className="text-3xl font-bold mb-6">About the Journal</h2>
+              <p className="text-lg text-muted-foreground mb-6">
                 The HBS Journal of Medical Sciences is a peer-reviewed,
                 open-access journal that publishes original research, reviews,
                 case reports, and perspectives across all areas of medicine and
@@ -53,88 +36,86 @@ export default function HBSJournal() {
                 scientific knowledge and clinical practice through rigorous
                 research and scholarly discourse.
               </p>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-muted-foreground mb-6">
                 Our journal maintains high standards of scientific integrity and
                 follows international publication ethics. All submitted
                 manuscripts undergo rigorous peer review by experts in the field
                 to ensure quality, originality, and relevance.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-blue-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
-                    Scope
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
+                <div className="bg-primary/5 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-3">Scope</h3>
+                  <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>Clinical and Basic Medical Sciences</span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>Pharmaceutical Research</span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>Public Health and Epidemiology</span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>Medical Education</span>
                     </li>
                     <li className="flex items-start">
                       <ChevronRight
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>Healthcare Management</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-blue-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                <div className="bg-primary/5 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-3">
                     Publication Frequency
                   </h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     The journal is published quarterly (4 issues per year):
                   </p>
-                  <ul className="space-y-2 text-gray-600">
+                  <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <Calendar
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>March (Spring Issue)</span>
                     </li>
                     <li className="flex items-start">
                       <Calendar
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>June (Summer Issue)</span>
                     </li>
                     <li className="flex items-start">
                       <Calendar
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>September (Fall Issue)</span>
                     </li>
                     <li className="flex items-start">
                       <Calendar
                         size={18}
-                        className="text-blue-700 mt-1 mr-2 flex-shrink-0"
+                        className="text-primary mt-1 mr-2 flex-shrink-0"
                       />
                       <span>December (Winter Issue)</span>
                     </li>
@@ -142,79 +123,75 @@ export default function HBSJournal() {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg h-fit">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                Journal Metrics
-              </h3>
+            <div className="bg-muted/50 p-6 rounded-lg h-fit">
+              <h3 className="text-xl font-semibold mb-4">Journal Metrics</h3>
               <div className="space-y-4">
                 <div>
-                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                  <div className="flex justify-between text-sm text-muted-foreground mb-1">
                     <span>Impact Factor</span>
                     <span className="font-semibold">2.8</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-muted rounded-full h-2">
                     <div
-                      className="bg-blue-700 h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full"
                       style={{ width: "56%" }}
                     ></div>
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                  <div className="flex justify-between text-sm text-muted-foreground mb-1">
                     <span>Acceptance Rate</span>
                     <span className="font-semibold">32%</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-muted rounded-full h-2">
                     <div
-                      className="bg-blue-700 h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full"
                       style={{ width: "32%" }}
                     ></div>
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                  <div className="flex justify-between text-sm text-muted-foreground mb-1">
                     <span>Review Time (Avg.)</span>
                     <span className="font-semibold">6 weeks</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-muted rounded-full h-2">
                     <div
-                      className="bg-blue-700 h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full"
                       style={{ width: "40%" }}
                     ></div>
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                  <div className="flex justify-between text-sm text-muted-foreground mb-1">
                     <span>Publication Time (Avg.)</span>
                     <span className="font-semibold">12 weeks</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-muted rounded-full h-2">
                     <div
-                      className="bg-blue-700 h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full"
                       style={{ width: "60%" }}
                     ></div>
                   </div>
                 </div>
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                  Indexing
-                </h3>
-                <ul className="space-y-2 text-gray-600">
+              <div className="mt-6 pt-6 border-t border-muted">
+                <h3 className="text-xl font-semibold mb-4">Indexing</h3>
+                <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-center">
-                    <ExternalLink size={16} className="text-blue-700 mr-2" />
+                    <ExternalLink size={16} className="text-primary mr-2" />
                     <span>PubMed Central</span>
                   </li>
                   <li className="flex items-center">
-                    <ExternalLink size={16} className="text-blue-700 mr-2" />
+                    <ExternalLink size={16} className="text-primary mr-2" />
                     <span>Scopus</span>
                   </li>
                   <li className="flex items-center">
-                    <ExternalLink size={16} className="text-blue-700 mr-2" />
+                    <ExternalLink size={16} className="text-primary mr-2" />
                     <span>Web of Science</span>
                   </li>
                   <li className="flex items-center">
-                    <ExternalLink size={16} className="text-blue-700 mr-2" />
+                    <ExternalLink size={16} className="text-primary mr-2" />
                     <span>Google Scholar</span>
                   </li>
                 </ul>
@@ -225,35 +202,35 @@ export default function HBSJournal() {
       </section>
 
       {/* Current Issue */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Current Issue</h2>
+            <h2 className="text-3xl font-bold">Current Issue</h2>
             <div className="flex items-center gap-2">
-              <span className="text-gray-600">
+              <span className="text-muted-foreground">
                 Volume 14, Issue 2, June 2023
               </span>
-              <button className="text-blue-700 hover:text-blue-800 flex items-center gap-1">
+              <button className="text-primary hover:underline underline-offset-4 flex items-center gap-1">
                 <Download size={18} /> Download Full Issue
               </button>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+          <div className="bg-background rounded-lg shadow-md p-6 mb-8">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                <BookOpen size={32} className="text-blue-700" />
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <BookOpen size={32} className="text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold">
                   From the Editor's Desk
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Prof. Dr. Aisha Rahman, Editor-in-Chief
                 </p>
               </div>
             </div>
-            <p className="text-gray-600 mb-4">
+            <p className="text-muted-foreground mb-4">
               In this issue, we present a collection of original research
               articles, reviews, and case reports that showcase the breadth and
               depth of medical research being conducted at HBS and our partner
@@ -263,7 +240,7 @@ export default function HBSJournal() {
             </p>
             <a
               href="#"
-              className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+              className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
             >
               Read full editorial <ChevronRight size={16} />
             </a>
@@ -271,30 +248,31 @@ export default function HBSJournal() {
 
           <div className="space-y-6">
             {currentIssueArticles.map((article, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <div
+                key={index}
+                className="bg-background rounded-lg shadow-md p-6"
+              >
                 <div className="flex justify-between">
-                  <span className="text-sm text-blue-700 font-medium">
+                  <span className="text-sm text-primary font-medium">
                     {article.category}
                   </span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-foreground/40">
                     Pages: {article.pages}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold my-2 text-gray-900">
-                  {article.title}
-                </h3>
-                <p className="text-gray-600 mb-3">{article.authors}</p>
-                <p className="text-gray-600 mb-4">{article.abstract}</p>
+                <h3 className="text-xl font-semibold my-2">{article.title}</h3>
+                <p className="text-muted-foreground mb-3">{article.authors}</p>
+                <p className="text-muted-foreground mb-4">{article.abstract}</p>
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     Read full article <ChevronRight size={16} />
                   </a>
                   <a
                     href="#"
-                    className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                    className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                   >
                     <Download size={16} /> PDF (1.2 MB)
                   </a>
@@ -306,7 +284,7 @@ export default function HBSJournal() {
           <div className="mt-8 text-center">
             <a
               href="#"
-              className="inline-flex items-center gap-2 text-blue-700 font-medium hover:text-blue-800"
+              className="inline-flex items-center gap-2 text-primary font-medium hover:underline underline-offset-4"
             >
               View all articles in this issue <ArrowRight size={18} />
             </a>
@@ -315,21 +293,19 @@ export default function HBSJournal() {
       </section>
 
       {/* Archive */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Journal Archive
-          </h2>
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">Journal Archive</h2>
 
           <div className="mb-8">
             <div className="relative">
               <input
                 type="text"
                 placeholder="Search articles by title, author, or keywords"
-                className="w-full p-4 pl-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 pl-12 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background"
               />
               <Search
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground"
                 size={20}
               />
             </div>
@@ -337,22 +313,20 @@ export default function HBSJournal() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {archiveYears.map((year, yearIndex) => (
-              <div key={yearIndex} className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                  {year.year}
-                </h3>
+              <div key={yearIndex} className="bg-muted/50 rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-4">{year.year}</h3>
                 <ul className="space-y-3">
                   {year.issues.map((issue, issueIndex) => (
                     <li key={issueIndex}>
                       <a
                         href="#"
-                        className="flex items-center justify-between p-3 bg-white rounded-md hover:bg-blue-50 transition-colors"
+                        className="flex items-center justify-between p-3 bg-background rounded-md hover:bg-primary/5 transition-colors"
                       >
                         <div className="flex items-center gap-3">
-                          <Calendar size={18} className="text-blue-700" />
+                          <Calendar size={18} className="text-primary" />
                           <span>{issue.title}</span>
                         </div>
-                        <ChevronRight size={18} className="text-blue-700" />
+                        <ChevronRight size={18} className="text-primary" />
                       </a>
                     </li>
                   ))}
@@ -364,16 +338,16 @@ export default function HBSJournal() {
       </section>
 
       {/* For Authors */}
-      <section className="py-16 bg-blue-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">For Authors</h2>
+      <section className="py-16 bg-muted/50">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">For Authors</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+            <div className="bg-background rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-4">
                 Submission Guidelines
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-muted-foreground mb-6">
                 We welcome original research, review articles, case reports, and
                 perspectives that align with the scope of our journal. Before
                 submitting your manuscript, please review our guidelines to
@@ -381,52 +355,48 @@ export default function HBSJournal() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="font-semibold text-blue-700">1</span>
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-semibold text-primary">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Prepare Your Manuscript
-                    </h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold">Prepare Your Manuscript</h4>
+                    <p className="text-muted-foreground">
                       Follow our formatting guidelines and use our manuscript
                       template
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="font-semibold text-blue-700">2</span>
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-semibold text-primary">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Online Submission
-                    </h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold">Online Submission</h4>
+                    <p className="text-muted-foreground">
                       Create an account on our submission portal and upload your
                       files
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="font-semibold text-blue-700">3</span>
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-semibold text-primary">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Peer Review</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold">Peer Review</h4>
+                    <p className="text-muted-foreground">
                       Your manuscript will undergo rigorous peer review by
                       experts
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="font-semibold text-blue-700">4</span>
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-semibold text-primary">4</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Publication</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold">Publication</h4>
+                    <p className="text-muted-foreground">
                       Accepted manuscripts will be published in the next
                       available issue after final approval and formatting
                     </p>
@@ -436,54 +406,46 @@ export default function HBSJournal() {
               <div className="mt-6">
                 <a
                   href="#"
-                  className="text-blue-700 font-medium flex items-center gap-1 hover:text-blue-800"
+                  className="text-primary font-medium flex items-center gap-1 hover:underline underline-offset-4"
                 >
                   Download author guidelines <Download size={16} />
                 </a>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                Editorial Process
-              </h3>
-              <p className="text-gray-600 mb-6">
+            <div className="bg-background rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-4">Editorial Process</h3>
+              <p className="text-muted-foreground mb-6">
                 Our rigorous editorial process ensures that all published
                 articles meet high standards of scientific quality and
                 integrity.
               </p>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-3 bg-blue-50 rounded-md">
-                  <Users size={20} className="text-blue-700" />
+                <div className="flex items-center gap-4 p-3 bg-primary/5 rounded-md">
+                  <Users size={20} className="text-primary" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Editorial Board
-                    </h4>
-                    <p className="text-sm text-gray-600">
+                    <h4 className="font-semibold">Editorial Board</h4>
+                    <p className="text-sm text-muted-foreground">
                       Comprised of distinguished experts across medical
                       specialties
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-3 bg-blue-50 rounded-md">
-                  <FileText size={20} className="text-blue-700" />
+                <div className="flex items-center gap-4 p-3 bg-primary/5 rounded-md">
+                  <FileText size={20} className="text-primary" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Peer Review Policy
-                    </h4>
-                    <p className="text-sm text-gray-600">
+                    <h4 className="font-semibold">Peer Review Policy</h4>
+                    <p className="text-sm text-muted-foreground">
                       Double-blind peer review by at least two independent
                       reviewers
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-3 bg-blue-50 rounded-md">
-                  <Calendar size={20} className="text-blue-700" />
+                <div className="flex items-center gap-4 p-3 bg-primary/5 rounded-md">
+                  <Calendar size={20} className="text-primary" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Publication Timeline
-                    </h4>
-                    <p className="text-sm text-gray-600">
+                    <h4 className="font-semibold">Publication Timeline</h4>
+                    <p className="text-sm text-muted-foreground">
                       Initial decision within 4 weeks, publication within 3
                       months of acceptance
                     </p>
@@ -491,9 +453,7 @@ export default function HBSJournal() {
                 </div>
               </div>
               <div className="mt-6">
-                <button className="bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors">
-                  Submit a Manuscript
-                </button>
+                <Button className="">Submit a Manuscript</Button>
               </div>
             </div>
           </div>
@@ -501,27 +461,27 @@ export default function HBSJournal() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+      <section className="py-16">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">
             Contact the Editorial Office
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
             For inquiries regarding manuscript submission, review process, or
             general information about the journal
           </p>
-          <div className="inline-flex flex-col sm:flex-row gap-4 bg-gray-50 p-6 rounded-lg">
-            <div className="px-6 py-3 border-r border-gray-200">
-              <p className="font-semibold text-gray-900">Email</p>
-              <p className="text-blue-700">journal@hbs.edu.pk</p>
+          <div className="inline-flex flex-col sm:flex-row gap-4 bg-muted/50 p-6 rounded-lg">
+            <div className="px-6 py-3 border-r border-muted">
+              <p className="font-semibold">Email</p>
+              <p className="text-primary">journal@hbs.edu.pk</p>
             </div>
-            <div className="px-6 py-3 border-r border-gray-200">
-              <p className="font-semibold text-gray-900">Phone</p>
-              <p className="text-blue-700">+92-51-1234567</p>
+            <div className="px-6 py-3 border-r border-muted">
+              <p className="font-semibold">Phone</p>
+              <p className="text-primary">+92-51-1234567</p>
             </div>
             <div className="px-6 py-3">
-              <p className="font-semibold text-gray-900">Address</p>
-              <p className="text-blue-700">
+              <p className="font-semibold">Address</p>
+              <p className="text-primary">
                 HBS Research Office, Islamabad, Pakistan
               </p>
             </div>
