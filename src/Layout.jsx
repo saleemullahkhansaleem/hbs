@@ -27,7 +27,11 @@ export default function Layout() {
   }, [darkMode]);
 
   return (
-    <main className={`bg-background text-foreground ${darkMode ? "dark" : ""}`}>
+    <main
+      className={`bg-background text-foreground ${
+        darkMode ? "dark" : ""
+      }`}
+    >
       <ScrollToTop />
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <div className="">

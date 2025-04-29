@@ -6,7 +6,7 @@ import { contactData } from "@/pages/Home";
 
 export default function ContactSection({ data = contactData }) {
   return (
-    <section className="bg-muted py-12">
+    <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div className="">
@@ -52,7 +52,7 @@ export default function ContactSection({ data = contactData }) {
           </div>
 
           <motion.div
-            className="mt-4 text-base text-muted-foreground  space-y-6"
+            className="mt-4 text-base text-muted-foreground space-y-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

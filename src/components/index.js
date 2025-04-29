@@ -17,6 +17,7 @@ import SideNav from "./SideNav";
 // Home
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
+import CourseFinderSection from "./CourseFinderSection";
 import CollegesSection from "./CollegesSection";
 import ChairmanMessageSection from "./ChairmanMessageSection";
 import BoardOfDirectorsSection from "./BoardOfDirectorsSection";
@@ -44,6 +45,7 @@ export {
   //   Home
   HeroSection,
   AboutSection,
+  CourseFinderSection,
   CollegesSection,
   ChairmanMessageSection,
   BoardOfDirectorsSection,

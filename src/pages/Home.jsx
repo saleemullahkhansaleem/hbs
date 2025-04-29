@@ -6,6 +6,7 @@ import {
   CollegesSection,
   ConferencesAndWorkshopsSection,
   ContactSection,
+  CourseFinderSection,
   HeroSection,
   OurHospitalsSection,
 } from "@/components";
@@ -33,15 +34,16 @@ export const contactData = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen max-w-[100vw] overflow-x-hidden bg-background text-foreground">
       <HeroSection />
       <AboutSection />
+      <CourseFinderSection />
+      {/* <AcademicsSection /> */}
       <CollegesSection />
+      <OurHospitalsSection />
+      <ConferencesAndWorkshopsSection />
       <ChairmanMessageSection />
       <BoardOfDirectorsSection />
-      <AcademicsSection />
-      <ConferencesAndWorkshopsSection />
-      <OurHospitalsSection />
       <ContactSection />
     </div>
   );
