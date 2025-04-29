@@ -13,6 +13,7 @@ import {
   AHSFaculty,
   AHSLife,
   AHSMediaGallery,
+  Apply,
   Careers,
   CollegesLayout,
   ConferencesWorkshops,
@@ -337,6 +338,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactUs />,
+      },
+      {
+        path: "apply",
+        element: <Apply />,
       },
       {
         path: "*",

@@ -100,7 +100,7 @@ export const navigation = [
 
 export const featureBtn = {
   name: "Apply Online",
-  href: "/apply-online",
+  href: "/apply",
 };
 
 export default function Navbar() {

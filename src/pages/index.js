@@ -7,6 +7,7 @@ import Programs from "./Programs";
 import Careers from "./Careers";
 import QEC from "./QEC";
 import ContactUs from "./ContactUs";
+import Apply from "./Apply";
 
 // Reaserch and Development
 import RD from "./rd/RD";
@@ -71,6 +72,7 @@ export {
   QEC,
   ContactUs,
   NotFound,
+  Apply,
   // Research and Development
   RD,
   HBSJournal,

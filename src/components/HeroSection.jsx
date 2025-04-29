@@ -13,7 +13,7 @@ const sliderData = [
     description:
       "In accordance with PM&DC regulations, HBS Medical College follows a centralized admission policy for new MBBS students, ensuring transparency and merit-based selection.",
     imageUrl: "/images/courses/mbbs.webp",
-    href: "/admissions/mbbs",
+    href: "/colleges/mdc/admissions",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const sliderData = [
     description:
       "Following PM&DC regulations, HBS Medical College implements a centralized admission policy for new BDS students, providing top-tier dental education.",
     imageUrl: "/images/courses/bds.webp",
-    href: "/admissions/bds",
+    href: "/colleges/mdc/admissions",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const sliderData = [
     description:
       "Offering Doctor of Physiotherapy (DPT), BS in Medical Laboratory Technology, Dental Hygiene, Radiology & Imaging, Anesthesia, and Optometry Technology. Approved by HEC and affiliated with SZABMU.",
     imageUrl: "/images/courses/rehabilitation.webp",
-    href: "/academics/rehabilitation-sciences",
+    href: "/colleges/ahs",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const sliderData = [
     description:
       "Programs include B.Sc Nursing, General Nursing, and Assistant Nursing (under approval process). Committed to producing skilled and compassionate healthcare professionals.",
     imageUrl: "/images/courses/nursing.webp",
-    href: "/academics/nursing",
+    href: "/colleges/nursing",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const sliderData = [
     description:
       "Offering diplomas in Laboratory Technology, Radiography, Dialysis, Dental Technology, OT Technology, and Dental Hygiene. Approved by FBISE for professional excellence.",
     imageUrl: "/images/courses/paramedics.webp",
-    href: "/academics/paramedics",
+    href: "/colleges/paramedics",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const sliderData = [
     description:
       "A five-year Pharm-D program recognized by the Pharmacy Council of Pakistan, preparing students for diverse careers in healthcare and the pharmaceutical industry.",
     imageUrl: "/images/courses/pharmacy.webp",
-    href: "/academics/pharmacy",
+    href: "/colleges/pharmacy",
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ const sliderData = [
     description:
       "Explore our Allied Health Sciences BS programs, designed to equip students with essential skills and knowledge in medical technology, physiotherapy, radiology, and more, preparing them for a successful career in healthcare.",
     imageUrl: "/images/courses/ahs-bs-programs.webp",
-    href: "/ahs-bs-programs",
+    href: "/colleges/ahs/academics",
   },
 ];
 
@@ -229,7 +229,7 @@ const HeroSection = () => {
                   size="lg"
                   asChild
                 >
-                  <Link to="/contact">Apply Online</Link>
+                  <Link to="/apply">Apply Online</Link>
                 </Button>
               </motion.div>
             </AnimatePresence>
