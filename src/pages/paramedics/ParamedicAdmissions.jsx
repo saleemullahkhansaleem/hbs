@@ -18,7 +18,7 @@ import {
 
 export default function ParamedicAdmissions() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-[100vw]">
       {/* Hero Section */}
       <section className="relative h-[40vh] min-h-[300px] w-full overflow-hidden bg-muted/50">
         <div className="container max-w-7xl mx-auto px-4 relative h-full flex flex-col items-center justify-center text-center">
@@ -553,7 +553,7 @@ export default function ParamedicAdmissions() {
 
               <div className="relative h-[300px] rounded-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=300&width=600"
+                  src="https://placehold.co/600x300"
                   alt="HBS College of Paramedics Location"
                   className="object-cover w-full h-full"
                 />

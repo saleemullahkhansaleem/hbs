@@ -54,7 +54,7 @@ export default function About() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://placehold.co/600x400"
+                src="/images/about/history.png"
                 alt="Hazrat Bari Imam Sarkar Shrine"
                 className="object-cover w-full h-full"
               />
@@ -183,9 +183,9 @@ export default function About() {
             <Card className="overflow-hidden">
               <div className="aspect-[3/2] p-6 relative">
                 <img
-                  src="/images/user.webp"
+                  src="/images/about/chairman-profile.png"
                   alt="Dr. Mohammad Riaz Shahbaz Janjua"
-                  className="object-contain rounded-lg h-full mx-auto"
+                  className="object-contain rounded-lg h-full mx-auto bg-foreground/10 p-2"
                 />
               </div>
               <div className="p-6">

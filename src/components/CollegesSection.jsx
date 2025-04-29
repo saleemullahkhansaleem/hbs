@@ -39,7 +39,7 @@ export function CollegeCard({ college, index }) {
         <p className="text-muted-foreground mb-8">{college.description}</p>
         <div className="mt-2 flex justify-end gap-4 absolute bottom-4 right-4">
           <Button asChild variant="link" size="">
-            <Link to="/friends">View Detail</Link>
+            <Link to={college.href}>View Detail</Link>
           </Button>
         </div>
       </div>
@@ -53,34 +53,34 @@ export const collegesName = [
     description:
       "Providing top-tier medical and dental education with state-of-the-art facilities.",
     icon: "🩺",
-    href: "/medical-dental-college",
+    href: "/colleges/mdc",
   },
   {
     name: "HBS College of Pharmacy",
     description:
       "Training future pharmacists with a focus on innovation and patient care.",
     icon: "💊",
-    href: "/college-of-pharmacy",
+    href: "/colleges/pharmacy",
   },
   {
     name: "HBS College of Nursing",
     description:
       "Developing compassionate and skilled nursing professionals for the healthcare industry.",
     icon: "🏥",
-    href: "/college-of-nursing",
+    href: "/colleges/nursing",
   },
   {
     name: "HBS College of Rehab & AHS",
     description:
       "Advancing rehabilitation sciences and allied health services for patient well-being.",
     icon: "🦾",
-    href: "/college-of-rehab-ahs",
+    href: "/colleges/ahs",
   },
   {
     name: "HBS College of Paramedics",
     description:
       "Equipping paramedics with essential skills for emergency and pre-hospital care.",
     icon: "🚑",
-    href: "/college-of-paramedics",
+    href: "/colleges/paramedics",
   },
 ];

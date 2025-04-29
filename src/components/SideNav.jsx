@@ -148,7 +148,8 @@ export default function SideNav({ collegeData }) {
     <Sidebar variant="" collapsible="icon" className="bg-background sticky">
       <SidebarHeader>
         <Link
-          to="/"
+          to={collegeData.navItems[0].group[0].href}
+          onClick={() => setOpenMobile(false)}
           className="flex items-center gap-2 mt-10"
           title="HBS Medical & Dental College"
         >
