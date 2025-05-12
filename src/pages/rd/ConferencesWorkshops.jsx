@@ -194,7 +194,7 @@ export default function ConferencesWorkshops() {
               >
                 <div className="h-48 bg-muted relative">
                   <img
-                    src={`https:placehold.co/500x300`}
+                    src={event.image}
                     alt={event.title}
                     className="w-full h-full object-cover"
                   />
@@ -684,6 +684,7 @@ const upcomingEvents = [
     description:
       "A global platform for medical educators to share innovations and best practices in medical education.",
     registrationStatus: "Open",
+    image: "/images/rd/conference.webp",
   },
   {
     type: "Workshop",
@@ -694,6 +695,7 @@ const upcomingEvents = [
     description:
       "Hands-on workshop covering research design, data collection methods, and statistical analysis.",
     registrationStatus: "Closing Soon",
+    image: "/images/rd/workshop.webp",
   },
   {
     type: "Seminar",
@@ -704,6 +706,7 @@ const upcomingEvents = [
     description:
       "Expert talks on recent developments in drug delivery systems and pharmaceutical research.",
     registrationStatus: "Open",
+    image: "/images/rd/seminar.webp",
   },
   {
     type: "Webinar",
@@ -714,6 +717,7 @@ const upcomingEvents = [
     description:
       "Exploring the intersection of technology and healthcare delivery in the digital age.",
     registrationStatus: "Closed",
+    image: "/images/rd/webinar.webp",
   },
   {
     type: "Workshop",
@@ -724,6 +728,7 @@ const upcomingEvents = [
     description:
       "Practical training in essential clinical skills for healthcare professionals.",
     registrationStatus: "Open",
+    image: "/images/rd/workshop.webp",
   },
   {
     type: "Symposium",
@@ -734,6 +739,7 @@ const upcomingEvents = [
     description:
       "Addressing burnout, stress management, and mental wellbeing among healthcare workers.",
     registrationStatus: "Open",
+    image: "/images/rd/symposium.webp",
   },
 ];
 

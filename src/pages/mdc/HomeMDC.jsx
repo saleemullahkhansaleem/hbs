@@ -332,7 +332,7 @@ export default function HomeMDC() {
                 <div className="absolute -bottom-6 right-20 w-32 h-32 bg-primary/30 rounded-full z-0"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                   <img
-                    src="/placeholder.svg?height=800&width=600"
+                    src="/images/colleges/mdc/intro.webp"
                     alt="Medical students in training"
                     className="w-full h-auto object-cover aspect-[3/2]"
                   />

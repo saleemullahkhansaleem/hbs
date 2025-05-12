@@ -220,9 +220,9 @@ export default function About() {
             <Card className="overflow-hidden">
               <div className="aspect-[3/2] p-6 relative">
                 <img
-                  src="/images/user.webp"
-                  alt="Dr. Mohammad Riaz Shahbaz Janjua"
-                  className="object-contain rounded-lg h-full mx-auto"
+                  src="/images/about/director-profile.png"
+                  alt="Dr. Jamilah Riaz"
+                  className="object-contain rounded-lg h-full mx-auto bg-foreground/10 p-2"
                 />
               </div>
               <div className="p-6">

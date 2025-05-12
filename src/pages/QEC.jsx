@@ -57,11 +57,11 @@ export default function QECPage() {
                 <div className="flex items-center mt-8">
                   <div className="mr-4">
                     <img
-                      src="/placeholder.svg?height=120&width=120"
+                      src="/images/about/chairman-profile.png"
                       alt="Dr. Mohammad Riaz Shehbaz Janjua"
                       width={120}
                       height={120}
-                      className="rounded-full object-cover border-4 border-primary/10"
+                      className="rounded-full aspect-square object-cover object-top border-4 border-primary/10 bg-muted/50"
                     />
                   </div>
                   <div>
@@ -198,6 +198,7 @@ export default function QECPage() {
             {/* Process Circle */}
             <div className="hidden md:block w-[500px] h-[500px] mx-auto border-4 border-dashed border-primary/30 rounded-full relative">
               {/* Circle nodes */}
+
               {[0, 60, 120, 180, 240, 300].map((angle, index) => {
                 const radians = (angle * Math.PI) / 180;
                 const x = 250 + 250 * Math.cos(radians);
@@ -206,28 +207,20 @@ export default function QECPage() {
                 return (
                   <div
                     key={index}
-                    className="absolute w-16 h-16 bg-background rounded-full shadow-lg flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2"
+                    className="absolute w-20 h-20 bg-background rounded-full shadow-lg flex flex-col items-center justify-center transform -translate-x-1/2 -translate-y-1/2 p-2"
                     style={{ left: x, top: y }}
                   >
-                    {index === 0 && (
-                      <ClipboardCheck className="h-8 w-8 text-primary" />
-                    )}
-                    {index === 1 && <Users className="h-8 w-8 text-primary" />}
-                    {index === 2 && (
-                      <BarChart className="h-8 w-8 text-primary" />
-                    )}
-                    {index === 3 && <Target className="h-8 w-8 text-primary" />}
-                    {index === 4 && (
-                      <BookOpen className="h-8 w-8 text-primary" />
-                    )}
-                    {index === 5 && <Award className="h-8 w-8 text-primary" />}
+                    {steps[index].icon}
+                    <span className="text-xs mt-1 text-muted-foreground text-center">
+                      {steps[index].title}
+                    </span>
                   </div>
                 );
               })}
 
               {/* Center */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center">
-                <div className="text-center">
+                <div className="text-center p-4">
                   <Shield className="h-10 w-10 text-primary mx-auto mb-1" />
                   <p className="text-sm font-bold text-primary">
                     Quality
@@ -310,3 +303,15 @@ export default function QECPage() {
     </div>
   );
 }
+
+const steps = [
+  {
+    icon: <ClipboardCheck className="h-8 w-8 text-primary" />,
+    title: "Verify",
+  },
+  { icon: <Users className="h-8 w-8 text-primary" />, title: "Team" },
+  { icon: <BarChart className="h-8 w-8 text-primary" />, title: "Analyze" },
+  { icon: <Target className="h-8 w-8 text-primary" />, title: "Focus" },
+  { icon: <BookOpen className="h-8 w-8 text-primary" />, title: "Learn" },
+  { icon: <Award className="h-8 w-8 text-primary" />, title: "Achieve" },
+];

@@ -70,7 +70,10 @@ export default function ResearchPipeline() {
                     <h3 className="text-lg font-semibold text-center mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground text-center">
+                    <p
+                      title={step.description}
+                      className="text-sm text-muted-foreground text-center line-clamp-2"
+                    >
                       {step.description}
                     </p>
                   </div>

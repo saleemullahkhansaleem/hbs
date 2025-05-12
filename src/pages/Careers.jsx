@@ -69,7 +69,7 @@ export default function Careers() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://placehold.co/600x400"
+                src="/images/careers.webp"
                 alt="Healthcare professionals at HBS"
                 className="object-cover w-full h-full"
               />

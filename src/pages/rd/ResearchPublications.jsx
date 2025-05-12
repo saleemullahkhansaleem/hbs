@@ -313,9 +313,9 @@ export default function ResearchPublications() {
                 key={index}
                 className="bg-background rounded-lg shadow-md overflow-hidden"
               >
-                <div className="h-48 bg-muted">
+                <div className="aspect-square bg-muted">
                   <img
-                    src={`https://placehold.co/300x200`}
+                    src={`/images/user.webp`}
                     alt={researcher.name}
                     className="w-full h-full object-cover"
                   />
