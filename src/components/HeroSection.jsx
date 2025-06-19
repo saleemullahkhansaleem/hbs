@@ -88,7 +88,7 @@ const HeroSection = () => {
     setIsPlaying(true);
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
-    }, 5000);
+    }, 10000);
   };
 
   const stopAutoSlide = () => {

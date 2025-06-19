@@ -43,7 +43,7 @@ export default function Home() {
       <OurHospitalsSection />
       <ConferencesAndWorkshopsSection />
       <ChairmanMessageSection />
-      <BoardOfDirectorsSection />
+      {/* <BoardOfDirectorsSection /> */}
       <ContactSection />
     </div>
   );
